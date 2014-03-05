@@ -1,0 +1,54 @@
+.main-heading {
+	margin-top: 40px;
+	background-image: url("mountain_scene.JPG");
+	background-position: 5% 40%;
+	height: 405px;
+
+	letter-spacing: 3px;
+}
+.container > p {
+	font-size: 18px;
+	line-height: 32px;
+
+	
+}
+
+.profile-pic {
+	float: right;
+	padding: 7px;
+
+	border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+
+	height: 200px;
+	text-align: center;
+}
+
+li.list-group-item > p.text-muted {
+	padding-left: 35px;
+}
+
+.anchor {
+	display: block;
+	position: relative;
+	top: -40px;
+	visibility: hidden;
+}
+
+.sub {
+	margin-left: 50px;
+}
+
+.sub-header {
+	padding-bottom: 20px;
+}
+
+.sub-container {
+	margin-left: 20px;
+}
+
+.small-list {
+	margin-left: 20px;
+	margin-right: 20px;
+}
