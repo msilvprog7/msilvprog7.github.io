@@ -189,7 +189,10 @@
 
 			$(function() {
 				$(".nav a").click(function() {
-					$(".navbar-toggle").click();
+					if($(".navbar-toggle").is(":visible"))
+					{
+							$(".navbar-toggle").click();
+					}
 				});
 			});
 		</script>
