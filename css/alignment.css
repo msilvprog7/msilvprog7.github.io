@@ -1,0 +1,24 @@
+/**
+ * Top padding to add some distance other objects
+ */
+.top-space {
+	display: block;
+	margin-top: 80px;
+}
+
+/**
+ * Center content
+ */
+.centered {
+	margin: auto;
+	text-align: center;
+}
+
+/**
+ * Modal size
+ */
+@media screen and (min-width: 1216px) {
+	.modal-dialog {
+		width: 1216px;
+	}
+}

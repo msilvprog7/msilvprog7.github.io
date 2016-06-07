@@ -1,0 +1,73 @@
+/**
+ * A list with icons beside items
+ */
+ul.icon-list > li > .content > .header, ul.icon-list > li > .show-more {
+	cursor: pointer;
+}
+
+ul.icon-list > li.no-click > .content > .header, ul.icon-list > li.no-click > .show-more {
+	cursor: default;
+}
+
+ul.icon-list > li > a.icon, ul.icon-list > li > a.show-more, ul.icon-list > li.no-click > a.icon, ul.icon-list > li.no-click > a.show-more {
+	cursor: pointer;
+}
+
+ul.icon-list > li > .icon, ul.icon-list > li > .show-more {
+	display: inline-block;
+	vertical-align: top;
+	width: 7.5%;
+	font-size: 24px;
+	text-decoration: none;
+}
+
+ul.icon-list > li > .icon > img, ul.icon-list > li > .show-more > img {
+	height: 24px;
+	width: auto;
+}
+
+ul.icon-list > li > .icon > i, ul.icon-list > li > .show-more > i {
+	display: block;
+}
+
+ul.icon-list > li > .content {
+	display: inline-block;
+	width: 80%;
+}
+
+ul.icon-list > li > .content > .header {
+	font-size: 18px;
+}
+
+ul.icon-list > li > .content > .more-details {
+	margin: 4px 30px;
+	font-size: 16px;
+	font-weight: lighter;
+}
+
+/**
+ * Mobile sizing
+ */
+@media screen and (max-width: 1216px) {
+	ul.icon-list > li > .icon, ul.icon-list > li > .show-more {
+		font-size: 18px;
+	}
+	
+	ul.icon-list > li > .icon > img, ul.icon-list > li > .show-more > img {
+		height: 18px;
+		width: auto;
+	}
+
+	ul.icon-list > li > .content {
+		width: 80%;
+	}
+
+	ul.icon-list > li > .content > .header {
+		font-size: 16px;
+	}
+
+	ul.icon-list > li > .content > .more-details {
+		margin: 4px 0px;
+		font-size: 16px;
+	}
+}

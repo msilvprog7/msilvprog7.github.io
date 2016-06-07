@@ -1,0 +1,107 @@
+/**
+ * All images align to top of their containers
+ */
+img {
+	display: inline-block;
+	vertical-align: top;
+}
+
+/**
+ * Image for display (click reveals modal with image)
+ */
+img.display {
+	cursor: pointer;
+}
+
+/**
+ * Image being displayed in a modal
+ */
+img.display-modal {
+	display: block;
+	margin: auto;
+	max-width: 100%;
+	text-align: center;
+}
+
+@media screen and (min-width: 1216px) {
+	img.display-modal {
+		max-width: 1088px;
+	}
+}
+
+.left-arrow {
+	float: left;
+}
+
+.right-arrow {
+	float: right;
+}
+
+/**
+ * Sink image to bottom of container
+ */
+img.bottom {
+	position: absolute;
+	bottom: 0px;
+}
+
+/**
+ * Small-height image or image container of 128px height
+ */
+.small-height {
+	height: 128px;
+}
+
+/**
+ * Medium-height image or image container of 350px height
+ */
+.medium-height {
+	height: 350px;
+}
+
+/**
+ * Small-width image or image container of 128px width
+ */
+.small-width {
+	width: 128px;
+}
+
+/**
+ * Medium-width image or image container of 350px width
+ */
+.medium-width {
+	width: 350px;
+}
+
+/**
+ * Mobile sizing
+ */
+@media screen and (max-width: 1216px) {
+	.small-height {
+		height: 96px;
+	}
+
+	.medium-height {
+		height: 250px;
+	}
+
+	.small-width {
+		width: 96px;
+	}
+
+	.medium-width {
+		width: 250px;
+	}
+}
+
+/**
+ * Stacked image group
+ */
+.stacked-images {
+	display: inline-block;
+	position: relative;
+}
+
+.stacked-images > img {
+	display: block;
+}
