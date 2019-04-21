@@ -8,10 +8,12 @@
 		<link rel="icon" type="image/ico" href="./favicon.ico">
 
 		<!-- CSS Resources -->
+		<!-- Bootstrap -->
+		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 		<!-- 	Bootstrap with Sandstone Bootstwatch -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/sandstone/bootstrap.min.css">
+		<link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/sandstone/bootstrap.min.css" rel="stylesheet" integrity="sha384-G3Fme2BM4boCE9tHx9zHvcxaQoAkksPQa/8oyn1Dzqv7gdcXChereUsXGx6LtbqA" crossorigin="anonymous">
 		<!-- 	Font Awesome -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 		<!--	Local CSS Resources -->
 		<link href="css/alignment.css" rel="stylesheet">
 		<link href="css/images.css" rel="stylesheet">
@@ -19,27 +21,20 @@
 	</head>
 	<body>
 		<!-- Nav Bar -->
-		<div class="navbar navbar-default navbar-fixed-top">
+		<div class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
 			<div class="container">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="#">Michael Snider</a>
-				</div>
-
-				<div class="collapse navbar-collapse" id="navbar-collapse">
+				<a class="navbar-brand" href="#">Michael Snider</a>
+				<button type="button" class="navbar-toggler" aria-expanded="true" aria-controls="navbarResponsive" aria-label="Toggle navigation" data-toggle="collapse" data-target="#navbarResponsive">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarResponsive">
 					<ul class="nav navbar-nav">
-						<!-- Left-side navbar -->
-					</ul>
-					<ul class="nav navbar-nav navbar-right">
 						<!-- Right-side navbar -->
-						<li><a href="#">about</span></a></li>
-						<li><a href="#projects">projects</span></a></li>
-						<li><a href="#work">work experience</span></a></li>
+						<li class="nav-item"><a class="nav-link" href="#">about</span></a></li>
+						<li class="nav-item"><a class="nav-link" href="#achievements">achievements</a></li>
+						<li class="nav-item"><a class="nav-link" href="#experience">experience</span></a></li>
+						<li class="nav-item"><a class="nav-link" href="#projects">projects</a></li>
+						<li class="nav-item"><a class="nav-link" href="#archives">archives</a></li>
 					</ul>
 				</div>
 			</div>
@@ -48,12 +43,12 @@
 		<div class="top-space"></div>
 
 		<!-- Modal -->
-		<div class="modal fade" role="dialog" id="modal">
-			<div class="modal-dialog">
+		<div class="modal fade" id="modal">
+			<div class="modal-dialog" role="dialog">
 				<div class="modal-content">
 					<div class="modal-header">
+						<h5 class="modal-title"></h5>
 						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-						<h4 class="modal-title"></h4>
 					</div>
 					<div class="modal-body">
 					</div>
@@ -68,457 +63,588 @@
 			<!-- About -->
 			<div class="row">
 				<!-- Images -->
-				<div class="col-xs-12 col-sm-5 centered images">
-      				<img class="medium-height display" src="img/me/graduate-244-350.jpg" alt="Graduating from the University of Virginia [May 2016]" />
+				<div class="col-sm-12 col-lg-5 centered images">
+      				<img class="medium-height display" src="img/me/me-at-seatac-2017.png" alt="Michael at SeaTac (November 2017)" />
 					<div class="stacked-images medium-height">
-						<img class="small-width display" src="img/me/michael-128-128.png" alt="Michael Snider [August 2014]" />
-						<img class="small-width bottom display" src="img/me/me-at-bing-119-200.jpg" alt="Interning at Bing [August 2015]" />
+						<img class="small-width display" src="img/me/me-at-art-museum-2016.jpg" alt="Michael at an Art Museum (June 2016)" />
+						<img class="small-width bottom display" src="img/me/me-graduating-2016.jpg" alt="Graduating from the University of Virginia (May 2016)" />
 					</div>
 				</div>
+
 				<!-- Details at a glance -->
-				<div class="col-xs-12 col-sm-7">
+				<div class="col-sm-12 col-lg-7">
 					<h1>Michael Snider</h1>
 					<hr />
 					<ul class="list-group icon-list">
+						<!-- Work -->
+						<li class="list-group-item">
+							<i class="fa fa-briefcase icon"></i>
+							<div class="content">
+								<div class="header" data-toggle="collapse" data-target="#workMoreDetails">Software Engineer 2 @ Microsoft (2016 - Present)</div>
+								<div class="collapse more-details" id="workMoreDetails">
+									Developing microservices to process device location signals and infer user locations
+								</div>
+							</div>
+							<i class="fa fa-chevron-down show-more" data-toggle="collapse" data-target="#workMoreDetails"></i>
+						</li>
+						<!-- Education -->
 						<li class="list-group-item">
 							<i class="fa fa-university icon"></i>
 							<div class="content">
 								<div class="header" data-toggle="collapse" data-target="#educationMoreDetails">University of Virginia (2012 - 2016)</div>
 								<div class="collapse more-details" id="educationMoreDetails">
-									Bachelor of Science in Computer Science (2012-2016)<br />
-									Summa Cum Laude<br />
-									3.941 GPA; 4.0 Major GPA
+									Bachelor of Science in Computer Science, Summa Cum Laude, 3.941 GPA
 								</div>
 							</div>
 							<i class="fa fa-chevron-down show-more" data-toggle="collapse" data-target="#educationMoreDetails"></i>
 						</li>
+						<!-- Skills -->
 						<li class="list-group-item">
-							<i class="fa fa-briefcase icon"></i>
+							<i class="fa fa-thumbs-up icon"></i>
 							<div class="content">
-								<div class="header" data-toggle="collapse" data-target="#workMoreDetails">Microsoft</div>
-								<div class="collapse more-details" id="workMoreDetails">
-									Software Engineer (2016 - )<br />
-									Bing User Location
+								<div class="header" data-toggle="collapse" data-target="#skillsMoreDetails">Skills</div>
+								<div class="collapse more-details" id="skillsMoreDetails">
+									<b style="font-weight: bold;">Programming: </b>
+									<span>C#, ASP.NET, JavaScript, Node.js, Python, Java, CSS, HTML</span><br>
+									<b style="font-weight: bold;">Architectures: </b>
+									<span>Monolithic, Microservices</span><br>
+									<b style="font-weight: bold;">Design: </b>
+									<span>Schema versioning, API design, RESTful web service design</span><br>
+									<b style="font-weight: bold;">Other: </b>
+									<span>AuthN and AuthZ in ASP.NET, User privacy, Prototyping</span><br>
 								</div>
 							</div>
-							<i class="fa fa-chevron-down show-more" data-toggle="collapse" data-target="#workMoreDetails"></i>
+							<i class="fa fa-chevron-down show-more" data-toggle="collapse" data-target="#skillsMoreDetails"></i>
 						</li>
-						<li class="list-group-item no-click">
-							<i class="fa fa-inbox icon"></i>
+						<!-- Contact -->
+						<li class="list-group-item">
+							<i class="fa fa-id-card icon"></i>
 							<div class="content">
-								<div class="header"><a href="https://www.dropbox.com/s/6bwdzas43m2cacd/Michael%20Snider%20Resume.pdf?dl=0" target="_blank">Resume</a></div>
+								<div class="header" data-toggle="collapse" data-target="#contactMoreDetails">Contact</div>
+								<div class="collapse more-details" id="contactMoreDetails">
+									<a href="https://www.dropbox.com/s/q6tpca8dbk7gyv7/Michael%20Snider%20Resume.pdf?dl=0" target="_blank">Resume <i class="fa fa-download"></i></a><br>
+									<a href="https://github.com/msilvprog7" target="_blank">GitHub <i class="fa fa-github-alt"></i></a><br>
+									<a href="mailto:msnider.software.engineer[at]gmail.com" target="_top">Email<i class="fa fa-paper-plane"></i></a>
+								</div>
 							</div>
-							<a class="show-more" href="https://www.dropbox.com/s/6bwdzas43m2cacd/Michael%20Snider%20Resume.pdf?dl=0" target="_blank"><i class="fa fa-download"></i></a>
-						</li>
-						<li class="list-group-item no-click">
-							<i class="fa fa-envelope icon"></i>
-							<div class="content">
-								<div class="header">msilvprog7<i class="fa fa-at"></i>gmail.com</div>
-							</div>
-							<a href="mailto:msilvprog7[at]gmail.com" target="_top"><i class="fa fa-paper-plane"></i></a>
-						</li>
-						<li class="list-group-item no-click">
-							<i class="fa fa-github icon"></i>
-							<div class="content">
-								<div class="header"><a href="https://github.com/msilvprog7" target="_blank">Github</a></div>
-							</div>
-							<a class="show-more" href="https://github.com/msilvprog7" target="_blank"><i class="fa fa-github-alt"></i></a>
+							<i class="fa fa-chevron-down show-more" data-toggle="collapse" data-target="#contactMoreDetails"></i>
 						</li>
 					</ul>
 				</div>
 			</div>
 
-        	<!-- Projects -->
-        	<div class="row">
-        		<div class="col-xs-12 col-sm-8">
-        			<h2 id="projects">Projects</h2>
-        			<hr />
-        			<ul class="list-group icon-list">
-        				<!-- mshuffle -->
-        				<li class="list-group-item">
-        					<i class="fa fa-music icon"></i>
-        					<div class="content">
-        						<div class="header" data-toggle="collapse" data-target="#project11">mshuffle</div>
-        						<div class="collapse more-details" id="project11">
-        							<div class="details">
-        								A <b>shuffling algorithm</b> for your music playlists. Unlike a typical shuffle that simply picks a random song each time, <i>mshuffle</i> considers a <b>history queue</b> to prevent songs from being selected within a threshold from the last play. Also, users can <i class="fa fa-thumbs-up"></i> (enjoy) or <i class="fa fa-thumbs-down"></i> (dislike) a song to factor in to whether or not songs on the same album, by the same artist, or by related artists will be more or less likely for future song selections.
-        							</div>
-        							<hr />
-        							<div class="images">
-        								<img class="small-height display" src="img/projects/mshuffle/mshuffle-playlist-selection.png" alt="Selecting Spotify playlists with mshuffle" />
-        								<img class="small-height display" src="img/projects/mshuffle/mshuffle-playing-music.png" alt="Playing a Spotify playlist (preview songs) with mshuffle" />
-        							</div>
-        							<hr />
-        							<div class="links">
-        								<a href="https://github.com/msilvprog7/mshuffle" target="_blank"><i class="fa fa-github"></i> Check out</a> 
-        								<span class="label label-danger">Node.js</span> <span class="label label-danger">JavaScript</span>
-        							</div>
-        						</div>
-        					</div>
-        					<i class="fa fa-angle-down show-more" data-toggle="collapse" data-target="#project11"></i>
-        				</li>
-        				<!-- Arduino Web Controller -->
-        				<li class="list-group-item">
-        					<i class="fa fa-lightbulb-o icon"></i>
-        					<div class="content">
-        						<div class="header" data-toggle="collapse" data-target="#project10">Arduino Web Controller</div>
-        						<div class="collapse more-details" id="project10">
-        							<div class="details">
-        								<div class="panel panel-default">
-        									<div class="panel-body">
-        										<i class="fa fa-bolt"></i> Appeared at Hack.UVA 2016
-        									</div>
-        								</div>
-        								Often when making interesting LED displays, it's tedious to re-write similar <b>Arduino</b> code each time. Instead, Daniel Winker and I came up with a solution similar to <b>Cloud</b> and Amazon's <b>Internet of Things</b> with a <b>web service</b> for defining board layouts with RGB LEDs and controlling the board from the web. The <b>Arduino</b> code simply defines the RGB LED groups, then a client scripts registers it with the <b>web service</b> so then you can collaboratively control the board. This project also makes it easy to write scripts that change the board based on <b>data from the web</b>, such as the <b>Twitter Stream</b> feature that can change the LEDs based on three user-defined topics of interest.
-        							</div>
-        							<hr />
-        							<div class="images">
-        								<img class="small-height display" src="img/projects/awc/awc-main-page.png" alt="Web controller website" />
-        								<img class="small-height display" src="img/projects/awc/awc-blank-board.png" alt="Controlling a board on the website" />
-        								<img class="small-height display" src="img/projects/awc/awc-board-pulse.png" alt="Pulsing through colors on RGB LED groups" />
-        								<img class="small-height display" src="img/projects/awc/awc-tweet-1.png" alt="Setting Tweet categories to observe" />
-        							</div>
-        							<hr />
-        							<div class="links">
-        								<a href="https://github.com/msilvprog7/arduino-web-controller" target="_blank"><i class="fa fa-github"></i> Check out</a> 
-        								<span class="label label-success">Python (Flask)</span> <span class="label label-primary">Arduino</span> <span class="label label-danger">JavaScript</span>
-        							</div>
-        						</div>
-        					</div>
-        					<i class="fa fa-angle-down show-more" data-toggle="collapse" data-target="#project10"></i>
-        				</li>
-        				<!-- RTF -->
-        				<li class="list-group-item">
-        					<i class="fa fa-map-marker icon"></i>
-        					<div class="content">
-        						<div class="header" data-toggle="collapse" data-target="#project9">RTF's Trail Management Software (Capstone)</div>
-        						<div class="collapse more-details" id="project9">
-        							<div class="details">
-        								<div class="panel panel-default">
-        									<div class="panel-body">
-        										<i class="fa fa-university"></i> A year-long capstone project at the University of Virginia
-        									</div>
-        								</div>
-        								For my fourth-year <b>capstone project</b>, I was on a team of 7 that developed a website for the <a href="http://rivannatrails.org/" target="_blank">Rivanna Trails Foundation</a>. Specifically, they needed a way to start collecting right-of-way property agreements for properties crossed by the <b>20+ miles of trail</b> in Charlottesville, VA, and Albemarle County. Our system ingests local property records as well as the <a href="https://en.wikipedia.org/wiki/Keyhole_Markup_Language" target="_blank">KML file</a> for the Rivanna trail. We then intersect the trail with the properties to break the trail into one segment per property. The trail management system the entire trail and allows the board members to change the trail and reference property agreements. 
-        							</div>
-        							<hr />
-        							<div class="images">
-        								<img class="small-height display" src="img/projects/rtf/rtf-page.png" alt="Trail management site" />
-        								<img class="small-height display" src="img/projects/rtf/rtf-map.png" alt="Up-close of the trail/property map" />
-        								<img class="small-height display" src="img/projects/rtf/rtf-maintenance-requests.png" alt="Creating a maintenance request along the tail" />
-        								<img class="small-height display" src="img/projects/rtf/rtf-atomization-process.png" alt="Algorithm for separating trail by properties crossed" />
-        							</div>
-        							<hr />
-        							<div class="links">
-        								<a><i class="fa fa-github"></i> Not available</a> 
-        								<span class="label label-success">Python (Django)</span> <span class="label label-danger">Google Maps JS API</span> <span class="label label-danger">JavaScript</span> <span class="label label-warning">HTML5</span>
-        							</div>
-        						</div>
-        					</div>
-        					<i class="fa fa-angle-down show-more" data-toggle="collapse" data-target="#project9"></i>
-        				</li>
-        				<!-- JS Game Engine / Master Biomancer -->
-        				<li class="list-group-item">
-        					<i class="fa fa-gamepad icon"></i>
-        					<div class="content">
-        						<div class="header" data-toggle="collapse" data-target="#project8">JS Game Engine / Master Biomancer</div>
-        						<div class="collapse more-details" id="project8">
-        							<div class="details">
-        								<div class="panel panel-default">
-        									<div class="panel-body">
-        										<i class="fa fa-graduation-cap"></i> A Game Design course project
-        									</div>
-        								</div>
-        								In my fourth-year at the University of Virginia, I took a <i>Game Design</i> course where I designed a <b>game engine</b> as well as a <b>game</b> using the engine with 2 other students. The <b>game engine</b> is based on simple principles like <b>display hierarchies</b> with <b>axis-aligned bounding boxes</b> for <b>hit boxes</b>. Additionally, we made a <b>level editor</b> to simplify level creation. We then made <i>Master Biomancer</i> using the engine. The game is a single-player, shooter game where the main character, the Biomancer, synthesizes animals from his gun to help fight off the enemies in his lab. Using the abilities of synthesized wolves, spiders, turtles, and penguins, the player must skillfully navigate through each of the levels to save his science from the enemies invading his lab.
-        							</div>
-        							<hr />
-        							<div class="links">
-        								<a href="https://github.com/msilvprog7/js-game-engine" target="_blank"><i class="fa fa-github"></i> Check out</a> 
-        								<span class="label label-danger">JavaScript (ES6)</span>
-        							</div>
-        						</div>
-        					</div>
-        					<i class="fa fa-angle-down show-more" data-toggle="collapse" data-target="#project8"></i>
-        				</li>
-        				<!-- Tilda -->
-        				<li class="list-group-item">
-        					<i class="fa fa-search icon"></i>
-        					<div class="content">
-        						<div class="header" data-toggle="collapse" data-target="#project7">Tilda</div>
-        						<div class="collapse more-details" id="project7">
-        							<div class="details">
-        								<div class="panel panel-default">
-        									<div class="panel-body">
-        										<i class="fa fa-university"></i> A project for an Information Retrieval course
-        									</div>
-        								</div>
-        								Also during my fourth-year of college, I worked with 2 other students to produce a <b>browser-based reference system</b> for a final project in an <i>Information Retrieval</i> course. <i>Tilda</i> is an <b>embedded search</b> Chrome plugin that allows a user to readily <b>reference URLs</b> by typing <i>'~'</i> after an informative message related to the page he or she would like to share. As an <b>information sharing platform</b>, <i>Tilda</i> makes it easy to share pages on social networking sites like Facebook and Twitter while also providing Computer Scientists with a <b>platform</b> to test <b>crawling</b>, <b>ranking</b>, and <b>feedback</b> systems.
-        							</div>
-        							<hr />
-        							<div class="links">
-        								<a><i class="fa fa-github"></i> Not available</a> 
-        								<span class="label label-danger">Node.js</span> <span class="label label-danger">Chrome Plugin</span> <span class="label label-success">Python (Flask)</span>
-        							</div>
-        						</div>
-        					</div>
-        					<i class="fa fa-angle-down show-more" data-toggle="collapse" data-target="#project7"></i>
-        				</li>
-        				<!-- Get with the Program -->
-        				<li class="list-group-item">
-        					<i class="fa fa-gamepad icon"></i>
-        					<div class="content">
-        						<div class="header" data-toggle="collapse" data-target="#project6">Get with the Program</div>
-        						<div class="collapse more-details" id="project6">
-        							<div class="details">
-        								<div class="panel panel-default">
-        									<div class="panel-body">
-        										<i class="fa fa-star"></i> 1st place at Hoos Hacking 2015
-        									</div>
-        								</div>
-        								<i>Get with the Program</i> is a <b>platformer game</b> that allows children to learn basic coding concepts. By selecting the step-by-step <i>actions</i> needed to get to the end of the level, including <i>state</i> changes from walking to running, children are introduced to simple <b>problem-solving</b> and <b>procedural approaches</b> to programming in a fun way.
-        							</div>
-        							<hr />
-        							<div class="links">
-        								<a href="https://github.com/msilvprog7/get-with-the-program" target="_blank"><i class="fa fa-github"></i> Check out</a> 
-        								<span class="label label-success">Python (Pygame)</span>
-        							</div>
-        						</div>
-        					</div>
-        					<i class="fa fa-angle-down show-more" data-toggle="collapse" data-target="#project6"></i>
-        				</li>
-        				<!-- Scavenger -->
-        				<li class="list-group-item">
-        					<i class="fa fa-mobile icon"></i>
-        					<div class="content">
-        						<div class="header" data-toggle="collapse" data-target="#project5">Scavenger</div>
-        						<div class="collapse more-details" id="project5">
-        							<div class="details">
-        								<div class="panel panel-default">
-        									<div class="panel-body">
-        										<i class="fa fa-graduation-cap"></i> A project for a Web and Mobile course
-        									</div>
-        								</div>
-        								As part of a <i>Web and Mobile</i> course I took in my last year at the University of Virginia, <i>Scavenger</i> is a mobile application that takes the <b>game</b> of <a href="http://www.letterboxing.org/" target="_blank">Letterboxing</a> and makes it available to <b>Android</b> and <b>iOS</b> users. Players can <i>hide</i> clues for other players by creating <b>location-based riddles</b> of objects that other users must find at the specific location. To submit a response, users <b>take a picture</b> of the riddle's solution and the <i>creator</i> marks solutions as <i>correct</i> or <i>incorrect</i>. 
-        							</div>
-        							<hr />
-        							<div class="links">
-        								<a><i class="fa fa-github"></i> Not available</a> 
-        								<span class="label label-primary">Android</span> <span class="label label-info">iOS (Swift)</span> <span class="label label-danger">Node.js</span>
-        							</div>
-        						</div>
-        					</div>
-        					<i class="fa fa-angle-down show-more" data-toggle="collapse" data-target="#project5"></i>
-        				</li>
-        				<!-- Slingshot Sam -->
-        				<li class="list-group-item">
-        					<i class="fa fa-gamepad icon"></i>
-        					<div class="content">
-        						<div class="header" data-toggle="collapse" data-target="#project4">Slingshot Sam</div>
-        						<div class="collapse more-details" id="project4">
-        							<div class="details">
-        								For a semester during my fourth-year, I joined the <i>Game Developer Club</i> at the University of Virginia and worked on an <b>Android platformer game</b>. In <i>Slingshot Sam</i>, platforms must be navigated by <i>launching</i> Sam from a slingshot. My specific role on the project was <b>exploring touch controls for Android</b> and creating a system that could collect actions like <i>touch</i>, <i>tap</i>, <i>drag</i>, and <i>release</i> and inform <b>observers</b> in an <b>event-driven</b> programming style.
-        							</div>
-        							<hr />
-        							<div class="links">
-        								<a href="https://github.com/davidamin/SlingshotSam" target="_blank"><i class="fa fa-github"></i> Check out</a> 
-        								<span class="label label-primary">Android (LibGDX)</span>
-        							</div>
-        						</div>
-        					</div>
-        					<i class="fa fa-angle-down show-more" data-toggle="collapse" data-target="#project4"></i>
-        				</li>
-        				<!-- Bullder- -->
-        				<li class="list-group-item">
-        					<i class="fa fa-server icon"></i>
-        					<div class="content">
-        						<div class="header" data-toggle="collapse" data-target="#project3">Bullder- (pronounced: ˈbôldərˌdaSH)</div>
-        						<div class="collapse more-details" id="project3">
-        							<div class="details">
-        								<div class="panel panel-default">
-        									<div class="panel-body">
-        										<i class="fa fa-star"></i> Top 7 Showcase at Hack.UVA 2015
-        									</div>
-        								</div>
-        								Instead of a server to store <b>data</b>, why not partition across users using the application? For this project, I worked with 2 other students to create a <b>serverless</b> application similar to Yik-Yak. Users can share pictures or post content that is then distributed to other users in the vicinity.
-        							</div>
-        							<hr />
-        							<div class="links">
-        								<a href="https://github.com/jbarrow/Bullder-" target="_blank"><i class="fa fa-github"></i> Check out</a> 
-        								<span class="label label-danger">JavaScript (PeerJS)</span> <span class="label label-warning">WebRTC</span>
-        							</div>
-        						</div>
-        					</div>
-        					<i class="fa fa-angle-down show-more" data-toggle="collapse" data-target="#project3"></i>
-        				</li>
-        				<!-- Python Image Manipulation / TSP Art -->
-        				<li class="list-group-item">
-        					<i class="fa fa-file-image-o icon"></i>
-        					<div class="content">
-        						<div class="header" data-toggle="collapse" data-target="#project2">Python Image Manipulation / TSP Art</div>
-        						<div class="collapse more-details" id="project2">
-        							<div class="details">
-        								<div class="panel panel-default">
-        									<div class="panel-body">
-        										<i class="fa fa-university"></i> A project for a Theory of Computation course
-        									</div>
-        								</div>
-        								This is an implementation of <a href="http://wiki.evilmadscientist.com/TSP_art" target="_blank">TSP Art</a> - solving somewhat small instances of the traveling salesman problem using <a href="http://www.math.uwaterloo.ca/tsp/concorde/index.html" target="_blank">Concorde TSP Solver</a> with dots placed over an image based on variance of pixel regions. Our stippling technique used probability to vary the distrubution of dots over the image.
-        							</div>
-        							<hr />
-        							<div class="images">
-        								<img class="small-height display" src="img/projects/tsp/mona_lisa.jpg" alt="Mona Lisa by Leonardo da Vinci" />
-        								<img class="small-height display" src="img/projects/tsp/mona_lisa-stipple.jpg" alt="Mona Lisa stippled" />
-        								<img class="small-height display" src="img/projects/tsp/mona_lisa-tsp.jpg" alt="Mona Lisa TSP art" />
-        								<img class="small-height display" src="img/projects/tsp/lichtenstein.jpg" alt="Cheese Head by Roy Lichtenstein" />
-        								<img class="small-height display" src="img/projects/tsp/lichtenstein-stipple.jpg" alt="Cheese Head stippled" />
-        								<img class="small-height display" src="img/projects/tsp/lichtenstein-tsp.jpg" alt="Cheese Head TSP art" />
-        								<img class="small-height display" src="img/projects/tsp/sonofman.jpg" alt="Son of Man by René Magritte" />
-        								<img class="small-height display" src="img/projects/tsp/sonofman-stipple.jpg" alt="Son of Man stippled" />
-        								<img class="small-height display" src="img/projects/tsp/sonofman-tsp.jpg" alt="Son of Man TSP art" />
-        							</div>
-        							<hr />
-        							<div class="links">
-        								<a href="https://github.com/msilvprog7/Python-Image-Manipulation" target="_blank"><i class="fa fa-github"></i> Check out</a> 
-        								<span class="label label-success">Python (Pillow)</span>
-        							</div>
-        						</div>
-        					</div>
-        					<i class="fa fa-angle-down show-more" data-toggle="collapse" data-target="#project2"></i>
-        				</li>
-        				<!-- n-dex -->
-        				<li class="list-group-item">
-        					<i class="fa fa-sticky-note-o icon"></i>
-        					<div class="content">
-        						<div class="header" data-toggle="collapse" data-target="#project1">n-dex</div>
-        						<div class="collapse more-details" id="project1">
-        							<div class="details">
-        								<div class="panel panel-default">
-        									<div class="panel-body">
-        										<i class="fa fa-graduation-cap"></i> I used this to study in a Modern Art History course
-        									</div>
-        								</div>
-        								<i>n-dex</i> is a <b>flashcard</b> website that is <b>mobile-friendly</b> and designed to support <b>embedded URL images</b> and <a href="https://en.wikibooks.org/wiki/LaTeX/Mathematics" target="_blank">LaTeX</a>. The <b>user-interface</b> makes it easy to <i>edit</i> cards, <i>collect</i> groups of cards, and <i>study</i> for exams. I made this while taking a <i>Modern Art History</i> course to motivate myself to study and memorize all the pieces for the exams.
-        							</div>
-        							<hr />
-        							<div class="images">
-        								<img class="small-height display" src="img/projects/n-dex/home-page.png" alt="n-dex home page" />
-        								<img class="small-height display" src="img/projects/n-dex/collection-example.png" alt="A collection of flashcards" />
-        								<img class="small-height display" src="img/projects/n-dex/card-example.png" alt="The front of a flashcard" />
-        								<img class="small-height display" src="img/projects/n-dex/card-example-with-back.png" alt="The back of a flashcard" />
-        								<img class="small-height display" src="img/projects/n-dex/card-mobile.png" alt="A flashcard on a mobile device" />
-        								<img class="small-height display" src="img/projects/n-dex/card-mobile-2.png" alt="A flashcard on a mobile device" />
-        							</div>
-        							<hr />
-        							<div class="links">
-        								<a href="https://github.com/msilvprog7/n-dex" target="_blank"><i class="fa fa-github"></i> Check out</a>
-        								<span class="label label-success">Python (Django)</span> <span class="label label-warning">Bootstrap</span> <span class="label label-warning">CSS</span>
-        							</div>
-        						</div>
-        					</div>
-        					<i class="fa fa-angle-down show-more" data-toggle="collapse" data-target="#project1"></i>
-        				</li>
-        				<!-- Boulder -->
-        				<li class="list-group-item">
-        					<i class="fa fa-heartbeat icon"></i>
-        					<div class="content">
-        						<div class="header" data-toggle="collapse" data-target="#project0">Boulder</div>
-        						<div class="collapse more-details" id="project0">
-        							<div class="details">
-        								<div class="panel panel-default">
-        									<div class="panel-body">
-        										<i class="fa fa-star"></i> 3rd place at HackNC 2014<br />
-        										<i class="fa fa-star"></i> Pebble Award - 1 of 2 Best Uses of the Pebble
-        									</div>
-        								</div>
-        								<i>Boulder</i> is an application that allows users to train exercises using the <a href="https://www.pebble.com/" target="_blank">Pebble watch</a> and through a <b>machine learning</b> algorithm called a <a href="https://en.wikipedia.org/wiki/Support_vector_machine" target="_blank">support vector machine</a>, categorize the trained exercises or motions and recognize them when they are performed again by the user. Tied in with a <b>web interface</b>, <i>Boulder</i> allows users to not only keep track of their exercises, but also <i>interact with their friends</i>, <i>gain points</i> for getting more fit, and <i>level up</i>. <i>Boulder</i> <b>encourages healthy activities</b> and helps users <i>Get Boulder</i>.
-        							</div>
-        							<hr />
-        							<div class="images">
-        								<img class="small-height display" src="img/projects/boulder/boulder-main-page.png" alt="Boulder's social network" />
-        							</div>
-        							<hr />
-        							<div class="links">
-        								<a href="https://github.com/msilvprog7/Boulder-web" target="_blank"><i class="fa fa-github"></i> Website</a> 
-        								<span class="label label-success">Python (Django)</span>
-        								<a href="https://github.com/dferrer/Boulder" target="_blank"><i class="fa fa-github"></i> Pebble</a> 
-        								<span class="label label-danger">JavaScript (Simply.js)</span>
-        							</div>
-        						</div>
-        					</div>
-        					<i class="fa fa-angle-down show-more" data-toggle="collapse" data-target="#project0"></i>
-        				</li>
-        			</ul>
-        		</div>
-        	</div>
+			<div class="row row-separation">
+				<div class="col-sm-12 col-lg-7">
+					<!-- Experience -->
+					<div>
+						<h2 id="experience">Experience</h2>
+						<hr />
+						<ul class="list-group icon-list">
+							<!-- Microsoft Software Engineer -->
+							<li class="list-group-item">
+								<div class="icon">
+									<img src="img/work/microsoft/icon.ico" />
+								</div>
+								<div class="content">
+									<div class="header" data-toggle="collapse" data-target="#workExperience5">Software Engineer 2 @ Microsoft (Sept 2018 - Present)</div>
+									<div class="collapse more-details" id="workExperience5">
+										<ul>
+											<li>Developed a new microservice to process device location signals uploaded from Microsoft's mobile apps and Windows for enterprise customers and consumers</li>
+											<li>Built infrastructure to produce and consume location inferences for enterprise and consumer experiences</li>
+										</ul>
+									</div>
+								</div>
+								<i class="fa fa-angle-down show-more" data-toggle="collapse" data-target="#workExperience5"></i>
+							</li>
+							<!-- Microsoft Software Engineer -->
+							<li class="list-group-item">
+								<div class="icon">
+									<img src="img/work/microsoft/icon.ico" />
+								</div>
+								<div class="content">
+									<div class="header" data-toggle="collapse" data-target="#workExperience4">Software Engineer @ Microsoft (Aug 2016 - Aug 2018)</div>
+									<div class="collapse more-details" id="workExperience4">
+										<ul>
+											<li>Released a backend API that allows consumers to curate collections of their favorite locations on Bing Maps, Cortana, and Windows Maps</li>
+											<li>Prototyped, developed, and integrated a location inference that populates meeting locations for the Time to Leave feature on Outlook mobile</li>
+										</ul>
+									</div>
+								</div>
+								<i class="fa fa-angle-down show-more" data-toggle="collapse" data-target="#workExperience4"></i>
+							</li>
+						</ul>
+					</div>
+					
+					<!-- Projects -->
+					<div class="row-separation">
+						<h2 id="projects">Projects</h2>
+						<hr />
+						<ul class="list-group icon-list">
+							<!-- Planter -->
+							<li class="list-group-item">
+								<i class="fa fa-leaf icon"></i>
+								<div class="content">
+									<div class="header" data-toggle="collapse" data-target="#project13">Planter</div>
+									<div class="collapse more-details" id="project13">
+										<div class="details">
+											An <b>Android</b> app to organize photos of plants over time of my home plants.
+										</div>
+										<hr />
+										<div class="links">
+												<a><i class="fa fa-github"></i> Not available</a> 
+											<span class="badge badge-danger">Android</span>
+										</div>
+									</div>
+								</div>
+								<i class="fa fa-angle-down show-more" data-toggle="collapse" data-target="#project13"></i>
+							</li>
+							<!-- mshuffle -->
+							<li class="list-group-item">
+								<i class="fa fa-music icon"></i>
+								<div class="content">
+									<div class="header" data-toggle="collapse" data-target="#project11">mshuffle</div>
+									<div class="collapse more-details" id="project11">
+										<div class="details">
+											A <b>shuffling algorithm</b> for your music playlists. Unlike a typical shuffle that simply picks a random song each time, <i>mshuffle</i> considers a <b>history queue</b> to prevent songs from being selected within a threshold from the last play. Also, users can <i class="fa fa-thumbs-up"></i> (enjoy) or <i class="fa fa-thumbs-down"></i> (dislike) a song to factor in to whether or not songs on the same album, by the same artist, or by related artists will be more or less likely for future song selections.
+										</div>
+										<hr />
+										<div class="images">
+											<img class="small-height display" src="img/projects/mshuffle/mshuffle-playlist-selection.png" alt="Selecting Spotify playlists with mshuffle" />
+											<img class="small-height display" src="img/projects/mshuffle/mshuffle-playing-music.png" alt="Playing a Spotify playlist (preview songs) with mshuffle" />
+										</div>
+										<hr />
+										<div class="links">
+											<a href="https://github.com/msilvprog7/mshuffle" target="_blank"><i class="fa fa-github"></i> Check out</a> 
+											<span class="badge badge-danger">Node.js</span> <span class="badge badge-danger">JavaScript</span>
+										</div>
+									</div>
+								</div>
+								<i class="fa fa-angle-down show-more" data-toggle="collapse" data-target="#project11"></i>
+							</li>
+							<!-- Capstone -->
+							<li class="list-group-item">
+								<i class="fa fa-map-marker icon"></i>
+								<div class="content">
+									<div class="header" data-toggle="collapse" data-target="#project9">Capstone (RTF's Trail Management Software)</div>
+									<div class="collapse more-details" id="project9">
+										<div class="details">
+											<div class="panel panel-default">
+												<div class="panel-body">
+													<i class="fa fa-university"></i> A year-long capstone project at the University of Virginia
+												</div>
+											</div>
+											For my fourth-year <b>capstone project</b>, I was on a team of 7 that developed a website for the <a href="http://rivannatrails.org/" target="_blank">Rivanna Trails Foundation</a>. Specifically, they needed a way to start collecting right-of-way property agreements for properties crossed by the <b>20+ miles of trail</b> in Charlottesville, VA, and Albemarle County. Our system ingests local property records as well as the <a href="https://en.wikipedia.org/wiki/Keyhole_Markup_Language" target="_blank">KML file</a> for the Rivanna trail. We then intersect the trail with the properties to break the trail into one segment per property. The trail management system the entire trail and allows the board members to change the trail and reference property agreements. 
+										</div>
+										<hr />
+										<div class="images">
+											<img class="small-height display" src="img/projects/rtf/rtf-page.png" alt="Trail management site" />
+											<img class="small-height display" src="img/projects/rtf/rtf-map.png" alt="Up-close of the trail/property map" />
+											<img class="small-height display" src="img/projects/rtf/rtf-maintenance-requests.png" alt="Creating a maintenance request along the tail" />
+											<img class="small-height display" src="img/projects/rtf/rtf-atomization-process.png" alt="Algorithm for separating trail by properties crossed" />
+										</div>
+										<hr />
+										<div class="links">
+											<a><i class="fa fa-github"></i> Not available</a> 
+											<span class="badge badge-success">Python (Django)</span> <span class="badge badge-danger">Google Maps JS API</span> <span class="badge badge-danger">JavaScript</span> <span class="badge badge-warning">HTML5</span>
+										</div>
+									</div>
+								</div>
+								<i class="fa fa-angle-down show-more" data-toggle="collapse" data-target="#project9"></i>
+							</li>
+							<!-- Undergraduate Thesis -->
+							<li class="list-group-item">
+								<i class="fa fa-pencil icon"></i>
+								<div class="content">
+									<div class="header" data-toggle="collapse" data-target="#project12">Undergraduate Thesis</div>
+									<div class="collapse more-details" id="project12">
+										<div class="details">
+											<div class="panel panel-default">
+												<div class="panel-body">
+													<i class="fa fa-university"></i> Undergraduate thesis at the University of Virginia
+												</div>
+											</div>
+											For my fourth-year <b>undergraduate thesis</b>, I wrote about the changing societal values concerning online information exchange.
+										</div>
+									</div>
+								</div>
+								<i class="fa fa-angle-down show-more" data-toggle="collapse" data-target="#project12"></i>
+							</li>
+						</ul>
+					</div>
+				</div>
 
-        	<!-- Work -->
-        	<div class="row">
-        		<div class="col-xs-12 col-sm-8">
-        			<h2 id="work">Work Experience</h2>
-        			<hr />
-        			<ul class="list-group icon-list">
-        				<!-- Microsoft Internship -->
-        				<li class="list-group-item">
-        					<div class="icon">
-        						<img src="img/work/microsoft/icon.ico" />
-        					</div>
-        					<div class="content">
-        						<div class="header" data-toggle="collapse" data-target="#workExperience3">Microsoft (May - August 2015)</div>
-        						<div class="collapse more-details" id="workExperience3">
-        							Before my last year of college, I was a <b>Software Engineer intern</b> at <a href="https://www.microsoft.com/" target="_blank">Microsoft Corporation</a> on the <b>Bing User Location</b> team. I designed and implemented <b>Bing Location History</b> in C# as a <b>middle-tier</b> and <b>backend</b> solution to manage stored locations for users over time. Additionally, I participated with a few colleagues in two company hackathons. The first hackathon, I developed a prototype in <b>JavaScript</b> of the <a href="https://www.bing.com/search?q=speed+test" target="_blank">Bing Internet Connection Speed Test</a>, which has been further developed and released by the team. During the second hackathon, I worked on the <b>front-end</b> of a website called Fashion Watch to allow users to submit photos that are then ranked against the latest fashion trends.
-        						</div>
-        					</div>
-        					<i class="fa fa-angle-down show-more" data-toggle="collapse" data-target="#workExperience3"></i>
-        				</li>
-        				<!-- Open Roads Internship -->
-        				<li class="list-group-item">
-        					<div class="icon">
-        						<img src="img/work/open-roads/icon.ico" />
-        					</div>
-        					<div class="content">
-        						<div class="header" data-toggle="collapse" data-target="#workExperience2">Open Roads Consulting, Inc. (June - August 2014)</div>
-        						<div class="collapse more-details" id="workExperience2">
-        							Following my second year at the University of Virginia, I coded as a <b>Jr. Programmer</b> for the second time at <a href="https://www.openroadsconsulting.com/" target="_blank">Open Roads Consulting, Inc</a>. My first project of this summer was a <b>Java Message Service Monitor</b> for their Data Gateway (middleware) in Java with <a href="https://en.wikipedia.org/wiki/Swing_(Java)" target="_blank">Swing</a>. This tool is now used to detect when traffic sensors are not communicating properly with the Traffic Management System. Also, I programmed the routines for data to fill the <b>PostgreSQL database</b> and the <b>web layout</b> for <a href="https://www.kapsch.net/us/ktc/Portfolio/products/video-sensor/automatic-number-plate-recognition" target="_blank">Kapsch Readers</a> in Open Roads' Travel Time Engine. 
-        						</div>
-        					</div>
-        					<i class="fa fa-angle-down show-more" data-toggle="collapse" data-target="#workExperience2"></i>
-        				</li>
-        				<!-- Open Roads Internship -->
-        				<li class="list-group-item">
-        					<div class="icon">
-        						<img src="img/work/open-roads/icon.ico" />
-        					</div>
-        					<div class="content">
-        						<div class="header" data-toggle="collapse" data-target="#workExperience1">Open Roads Consulting, Inc. (June - August 2013)</div>
-        						<div class="collapse more-details" id="workExperience1">
-        							After my first year of college, I worked as a <b>Jr. Programmer</b> at <a href="https://www.openroadsconsulting.com/" target="_blank">Open Roads Consulting, Inc</a>. First, I worked on the <b>internationalization project</b> to convert all displayed text to constants that could be easily translated. I then worked on the <b>Planned Events</b> section of their Traffic Management System using <a href="http://www.gwtproject.org/" target="_blank">Google Web Toolkit</a> and <b>Java</b>. Additionally, I helped <b>redesign the website</b> used by their Quality Assurance team and added some new features to help find call-support contacts for different partners.
-        						</div>
-        					</div>
-        					<i class="fa fa-angle-down show-more" data-toggle="collapse" data-target="#workExperience1"></i>
-        				</li>
-        				<!-- Jefferson Lab Internship -->
-        				<li class="list-group-item">
-        					<div class="icon">
-        						<img src="img/work/jefferson-lab/icon.ico" />
-        					</div>
-        					<div class="content">
-        						<div class="header" data-toggle="collapse" data-target="#workExperience0">Jefferson Lab (June - July 2011)</div>
-        						<div class="collapse more-details" id="workExperience0">
-        							The summer after my Junior year in High School, I interned at <a href="https://www.jlab.org/" target="_blank">Thomas Jefferson National Accelerator Facility</a>. I programmed <b>macros</b> for Juliette Mammei's Moller Scattering project to analyze where photons collided in the simulation. These macros used the <b>ROOT framework</b> in <b>C++</b> to generate histograms of the data. 
-        						</div>
-        					</div>
-        					<i class="fa fa-angle-down show-more" data-toggle="collapse" data-target="#workExperience0"></i>
-        				</li>
-        			</ul>
-        		</div>
-        	</div>
+				<!-- Achievements -->
+				<div class="col-sm-12 col-lg-5">
+					<h2 id="achievements">Achievements</h2>
+					<hr />
+					<span class="badge badge-pill badge-primary">Feb 2018</span><br>
+					<h6>Executive meeting between Office and Cortana organizations showcased the live-demo I worked on to observe our location inferencing system inferring and displaying a meeting location in the dogfood version of Outlook Web Access</h6>
+					<br>
+					
+					<span class="badge badge-pill badge-primary">Jun 2017</span><br>
+					<h6>2nd place in Millennials category of Microsoft's One Week hackathon, produced a Cortana Skill that allows users to find concert tickets by location, ranking results by distance, time, Billboard Top 100, and the user's top Spotify artists</h6>
+					<br>
+
+					<span class="badge badge-pill badge-primary">Mar 2017</span><br>
+					<h6>1st place in Cortana Skills hackathon, the skill allowed family members to find one another via speech or text using LUIS.AI to recognize names, places, and questions</h6>
+					<br>
+
+					<span class="badge badge-pill badge-primary">Before 2017</span><br>
+					<h6>Please check out my <a href="#archives">Archives</a> to see my achievements in internships, hackathons, and personal projects during college</h6>
+				</div>
+			</div>
+
+			<!-- Archives -->
+        	<div class="row row-separation">
+				<div class="col-sm-12 col-lg-12">
+					<h2 id="archives">Archives</h2>
+					<hr />
+					<h4>Software Engineering Internships</h4>
+					<ul class="list-group icon-list">
+						<!-- Microsoft Internship -->
+						<li class="list-group-item">
+							<div class="icon">
+								<img src="img/work/microsoft/icon.ico" />
+							</div>
+							<div class="content">
+								<div class="header" data-toggle="collapse" data-target="#workExperience3">Microsoft (May - Aug 2015)</div>
+								<div class="collapse more-details" id="workExperience3">
+									<ul>
+										<li>
+											Bing Location History (now <a href="https://account.microsoft.com/privacy/activity-history?view=location" target="_blank">Microsoft's Privacy Dashboard for Location</a>)
+										</li>
+										<li>
+											<a href="https://www.bing.com/search?q=speed+test" target="_blank">Speed Test</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<i class="fa fa-angle-down show-more" data-toggle="collapse" data-target="#workExperience3"></i>
+						</li>
+						<!-- Open Roads Internship -->
+						<li class="list-group-item">
+							<div class="icon">
+								<img src="img/work/open-roads/icon.ico" />
+							</div>
+							<div class="content">
+								<div class="header" data-toggle="collapse" data-target="#workExperience2">Open Roads Consulting, Inc. (June - Aug 2014)</div>
+								<div class="collapse more-details" id="workExperience2">
+									<ul>
+										<li>Device connection monitoring</li>
+										<li>Database for Travel Time</li>
+									</ul>
+								</div>
+							</div>
+							<i class="fa fa-angle-down show-more" data-toggle="collapse" data-target="#workExperience2"></i>
+						</li>
+						<!-- Open Roads Internship -->
+						<li class="list-group-item">
+							<div class="icon">
+								<img src="img/work/open-roads/icon.ico" />
+							</div>
+							<div class="content">
+								<div class="header" data-toggle="collapse" data-target="#workExperience1">Open Roads Consulting, Inc. (June - Aug 2013)</div>
+								<div class="collapse more-details" id="workExperience1">
+									<ul>
+										<li>Development on their traffic management software</li>
+									</ul>	
+								</div>
+							</div>
+							<i class="fa fa-angle-down show-more" data-toggle="collapse" data-target="#workExperience1"></i>
+						</li>
+					</ul>
+					<hr />
+					<h4>Projects</h4>
+					<ul class="list-group icon-list">
+						<!-- Arduino Web Controller -->
+						<li class="list-group-item">
+							<i class="fa fa-lightbulb-o icon"></i>
+							<div class="content">
+								<div class="header" data-toggle="collapse" data-target="#project10">Arduino Web Controller</div>
+								<div class="collapse more-details" id="project10">
+									<div class="details">
+										<div class="panel panel-default">
+											<div class="panel-body">
+												<i class="fa fa-bolt"></i> Appeared at Hack.UVA 2016
+											</div>
+										</div>
+										Often when making interesting LED displays, it's tedious to re-write similar <b>Arduino</b> code each time. Instead, Daniel Winker and I came up with a solution similar to <b>Cloud</b> and Amazon's <b>Internet of Things</b> with a <b>web service</b> for defining board layouts with RGB LEDs and controlling the board from the web. The <b>Arduino</b> code simply defines the RGB LED groups, then a client scripts registers it with the <b>web service</b> so then you can collaboratively control the board. This project also makes it easy to write scripts that change the board based on <b>data from the web</b>, such as the <b>Twitter Stream</b> feature that can change the LEDs based on three user-defined topics of interest.
+									</div>
+									<hr />
+									<div class="images">
+										<img class="small-height display" src="img/projects/awc/awc-main-page.png" alt="Web controller website" />
+										<img class="small-height display" src="img/projects/awc/awc-blank-board.png" alt="Controlling a board on the website" />
+										<img class="small-height display" src="img/projects/awc/awc-board-pulse.png" alt="Pulsing through colors on RGB LED groups" />
+										<img class="small-height display" src="img/projects/awc/awc-tweet-1.png" alt="Setting Tweet categories to observe" />
+									</div>
+									<hr />
+									<div class="links">
+										<a href="https://github.com/msilvprog7/arduino-web-controller" target="_blank"><i class="fa fa-github"></i> Check out</a> 
+										<span class="badge badge-success">Python (Flask)</span> <span class="badge badge-primary">Arduino</span> <span class="badge badge-danger">JavaScript</span>
+									</div>
+								</div>
+							</div>
+							<i class="fa fa-angle-down show-more" data-toggle="collapse" data-target="#project10"></i>
+						</li>
+						<!-- JS Game Engine / Master Biomancer -->
+						<li class="list-group-item">
+							<i class="fa fa-gamepad icon"></i>
+							<div class="content">
+								<div class="header" data-toggle="collapse" data-target="#project8">JS Game Engine / Master Biomancer</div>
+								<div class="collapse more-details" id="project8">
+									<div class="details">
+										<div class="panel panel-default">
+											<div class="panel-body">
+												<i class="fa fa-graduation-cap"></i> A Game Design course project
+											</div>
+										</div>
+										In my fourth-year at the University of Virginia, I took a <i>Game Design</i> course where I designed a <b>game engine</b> as well as a <b>game</b> using the engine with 2 other students. The <b>game engine</b> is based on simple principles like <b>display hierarchies</b> with <b>axis-aligned bounding boxes</b> for <b>hit boxes</b>. Additionally, we made a <b>level editor</b> to simplify level creation. We then made <i>Master Biomancer</i> using the engine. The game is a single-player, shooter game where the main character, the Biomancer, synthesizes animals from his gun to help fight off the enemies in his lab. Using the abilities of synthesized wolves, spiders, turtles, and penguins, the player must skillfully navigate through each of the levels to save his science from the enemies invading his lab.
+									</div>
+									<hr />
+									<div class="links">
+										<a href="https://github.com/msilvprog7/js-game-engine" target="_blank"><i class="fa fa-github"></i> Check out</a> 
+										<span class="badge badge-danger">JavaScript (ES6)</span>
+									</div>
+								</div>
+							</div>
+							<i class="fa fa-angle-down show-more" data-toggle="collapse" data-target="#project8"></i>
+						</li>
+						<!-- Tilda -->
+						<li class="list-group-item">
+							<i class="fa fa-search icon"></i>
+							<div class="content">
+								<div class="header" data-toggle="collapse" data-target="#project7">Tilda</div>
+								<div class="collapse more-details" id="project7">
+									<div class="details">
+										<div class="panel panel-default">
+											<div class="panel-body">
+												<i class="fa fa-university"></i> A project for an Information Retrieval course
+											</div>
+										</div>
+										Also during my fourth-year of college, I worked with 2 other students to produce a <b>browser-based reference system</b> for a final project in an <i>Information Retrieval</i> course. <i>Tilda</i> is an <b>embedded search</b> Chrome plugin that allows a user to readily <b>reference URLs</b> by typing <i>'~'</i> after an informative message related to the page he or she would like to share. As an <b>information sharing platform</b>, <i>Tilda</i> makes it easy to share pages on social networking sites like Facebook and Twitter while also providing Computer Scientists with a <b>platform</b> to test <b>crawling</b>, <b>ranking</b>, and <b>feedback</b> systems.
+									</div>
+									<hr />
+									<div class="links">
+										<a><i class="fa fa-github"></i> Not available</a> 
+										<span class="badge badge-danger">Node.js</span> <span class="badge badge-danger">Chrome Plugin</span> <span class="badge badge-success">Python (Flask)</span>
+									</div>
+								</div>
+							</div>
+							<i class="fa fa-angle-down show-more" data-toggle="collapse" data-target="#project7"></i>
+						</li>
+						<!-- Get with the Program -->
+						<li class="list-group-item">
+							<i class="fa fa-gamepad icon"></i>
+							<div class="content">
+								<div class="header" data-toggle="collapse" data-target="#project6">Get with the Program</div>
+								<div class="collapse more-details" id="project6">
+									<div class="details">
+										<div class="panel panel-default">
+											<div class="panel-body">
+												<i class="fa fa-star"></i> 1st place at Hoos Hacking 2015
+											</div>
+										</div>
+										<i>Get with the Program</i> is a <b>platformer game</b> that allows children to learn basic coding concepts. By selecting the step-by-step <i>actions</i> needed to get to the end of the level, including <i>state</i> changes from walking to running, children are introduced to simple <b>problem-solving</b> and <b>procedural approaches</b> to programming in a fun way.
+									</div>
+									<hr />
+									<div class="links">
+										<a href="https://github.com/msilvprog7/get-with-the-program" target="_blank"><i class="fa fa-github"></i> Check out</a> 
+										<span class="badge badge-success">Python (Pygame)</span>
+									</div>
+								</div>
+							</div>
+							<i class="fa fa-angle-down show-more" data-toggle="collapse" data-target="#project6"></i>
+						</li>
+						<!-- Scavenger -->
+						<li class="list-group-item">
+							<i class="fa fa-mobile icon"></i>
+							<div class="content">
+								<div class="header" data-toggle="collapse" data-target="#project5">Scavenger</div>
+								<div class="collapse more-details" id="project5">
+									<div class="details">
+										<div class="panel panel-default">
+											<div class="panel-body">
+												<i class="fa fa-graduation-cap"></i> A project for a Web and Mobile course
+											</div>
+										</div>
+										As part of a <i>Web and Mobile</i> course I took in my last year at the University of Virginia, <i>Scavenger</i> is a mobile application that takes the <b>game</b> of <a href="http://www.letterboxing.org/" target="_blank">Letterboxing</a> and makes it available to <b>Android</b> and <b>iOS</b> users. Players can <i>hide</i> clues for other players by creating <b>location-based riddles</b> of objects that other users must find at the specific location. To submit a response, users <b>take a picture</b> of the riddle's solution and the <i>creator</i> marks solutions as <i>correct</i> or <i>incorrect</i>. 
+									</div>
+									<hr />
+									<div class="links">
+										<a><i class="fa fa-github"></i> Not available</a> 
+										<span class="badge badge-primary">Android</span> <span class="badge badge-info">iOS (Swift)</span> <span class="badge badge-danger">Node.js</span>
+									</div>
+								</div>
+							</div>
+							<i class="fa fa-angle-down show-more" data-toggle="collapse" data-target="#project5"></i>
+						</li>
+						<!-- Slingshot Sam -->
+						<li class="list-group-item">
+							<i class="fa fa-gamepad icon"></i>
+							<div class="content">
+								<div class="header" data-toggle="collapse" data-target="#project4">Slingshot Sam</div>
+								<div class="collapse more-details" id="project4">
+									<div class="details">
+										For a semester during my fourth-year, I joined the <i>Game Developer Club</i> at the University of Virginia and worked on an <b>Android platformer game</b>. In <i>Slingshot Sam</i>, platforms must be navigated by <i>launching</i> Sam from a slingshot. My specific role on the project was <b>exploring touch controls for Android</b> and creating a system that could collect actions like <i>touch</i>, <i>tap</i>, <i>drag</i>, and <i>release</i> and inform <b>observers</b> in an <b>event-driven</b> programming style.
+									</div>
+									<hr />
+									<div class="links">
+										<a href="https://github.com/davidamin/SlingshotSam" target="_blank"><i class="fa fa-github"></i> Check out</a> 
+										<span class="badge badge-primary">Android (LibGDX)</span>
+									</div>
+								</div>
+							</div>
+							<i class="fa fa-angle-down show-more" data-toggle="collapse" data-target="#project4"></i>
+						</li>
+						<!-- Bullder- -->
+						<li class="list-group-item">
+							<i class="fa fa-server icon"></i>
+							<div class="content">
+								<div class="header" data-toggle="collapse" data-target="#project3">Bullder- (pronounced: ˈbôldərˌdaSH)</div>
+								<div class="collapse more-details" id="project3">
+									<div class="details">
+										<div class="panel panel-default">
+											<div class="panel-body">
+												<i class="fa fa-star"></i> Top 7 Showcase at Hack.UVA 2015
+											</div>
+										</div>
+										Instead of a server to store <b>data</b>, why not partition across users using the application? For this project, I worked with 2 other students to create a <b>serverless</b> application similar to Yik-Yak. Users can share pictures or post content that is then distributed to other users in the vicinity.
+									</div>
+									<hr />
+									<div class="links">
+										<a href="https://github.com/jbarrow/Bullder-" target="_blank"><i class="fa fa-github"></i> Check out</a> 
+										<span class="badge badge-danger">JavaScript (PeerJS)</span> <span class="badge badge-warning">WebRTC</span>
+									</div>
+								</div>
+							</div>
+							<i class="fa fa-angle-down show-more" data-toggle="collapse" data-target="#project3"></i>
+						</li>
+						<!-- Python Image Manipulation / TSP Art -->
+						<li class="list-group-item">
+							<i class="fa fa-file-image-o icon"></i>
+							<div class="content">
+								<div class="header" data-toggle="collapse" data-target="#project2">Python Image Manipulation / TSP Art</div>
+								<div class="collapse more-details" id="project2">
+									<div class="details">
+										<div class="panel panel-default">
+											<div class="panel-body">
+												<i class="fa fa-university"></i> A project for a Theory of Computation course
+											</div>
+										</div>
+										This is an implementation of <a href="http://wiki.evilmadscientist.com/TSP_art" target="_blank">TSP Art</a> - solving somewhat small instances of the traveling salesman problem using <a href="http://www.math.uwaterloo.ca/tsp/concorde/index.html" target="_blank">Concorde TSP Solver</a> with dots placed over an image based on variance of pixel regions. Our stippling technique used probability to vary the distrubution of dots over the image.
+									</div>
+									<hr />
+									<div class="images">
+										<img class="small-height display" src="img/projects/tsp/mona_lisa.jpg" alt="Mona Lisa by Leonardo da Vinci" />
+										<img class="small-height display" src="img/projects/tsp/mona_lisa-stipple.jpg" alt="Mona Lisa stippled" />
+										<img class="small-height display" src="img/projects/tsp/mona_lisa-tsp.jpg" alt="Mona Lisa TSP art" />
+										<img class="small-height display" src="img/projects/tsp/lichtenstein.jpg" alt="Cheese Head by Roy Lichtenstein" />
+										<img class="small-height display" src="img/projects/tsp/lichtenstein-stipple.jpg" alt="Cheese Head stippled" />
+										<img class="small-height display" src="img/projects/tsp/lichtenstein-tsp.jpg" alt="Cheese Head TSP art" />
+										<img class="small-height display" src="img/projects/tsp/sonofman.jpg" alt="Son of Man by René Magritte" />
+										<img class="small-height display" src="img/projects/tsp/sonofman-stipple.jpg" alt="Son of Man stippled" />
+										<img class="small-height display" src="img/projects/tsp/sonofman-tsp.jpg" alt="Son of Man TSP art" />
+									</div>
+									<hr />
+									<div class="links">
+										<a href="https://github.com/msilvprog7/Python-Image-Manipulation" target="_blank"><i class="fa fa-github"></i> Check out</a> 
+										<span class="badge badge-success">Python (Pillow)</span>
+									</div>
+								</div>
+							</div>
+							<i class="fa fa-angle-down show-more" data-toggle="collapse" data-target="#project2"></i>
+						</li>
+						<!-- n-dex -->
+						<li class="list-group-item">
+							<i class="fa fa-sticky-note-o icon"></i>
+							<div class="content">
+								<div class="header" data-toggle="collapse" data-target="#project1">n-dex</div>
+								<div class="collapse more-details" id="project1">
+									<div class="details">
+										<div class="panel panel-default">
+											<div class="panel-body">
+												<i class="fa fa-graduation-cap"></i> I used this to study in a Modern Art History course
+											</div>
+										</div>
+										<i>n-dex</i> is a <b>flashcard</b> website that is <b>mobile-friendly</b> and designed to support <b>embedded URL images</b> and <a href="https://en.wikibooks.org/wiki/LaTeX/Mathematics" target="_blank">LaTeX</a>. The <b>user-interface</b> makes it easy to <i>edit</i> cards, <i>collect</i> groups of cards, and <i>study</i> for exams. I made this while taking a <i>Modern Art History</i> course to motivate myself to study and memorize all the pieces for the exams.
+									</div>
+									<hr />
+									<div class="images">
+										<img class="small-height display" src="img/projects/n-dex/home-page.png" alt="n-dex home page" />
+										<img class="small-height display" src="img/projects/n-dex/collection-example.png" alt="A collection of flashcards" />
+										<img class="small-height display" src="img/projects/n-dex/card-example.png" alt="The front of a flashcard" />
+										<img class="small-height display" src="img/projects/n-dex/card-example-with-back.png" alt="The back of a flashcard" />
+										<img class="small-height display" src="img/projects/n-dex/card-mobile.png" alt="A flashcard on a mobile device" />
+										<img class="small-height display" src="img/projects/n-dex/card-mobile-2.png" alt="A flashcard on a mobile device" />
+									</div>
+									<hr />
+									<div class="links">
+										<a href="https://github.com/msilvprog7/n-dex" target="_blank"><i class="fa fa-github"></i> Check out</a>
+										<span class="badge badge-success">Python (Django)</span> <span class="badge badge-warning">Bootstrap</span> <span class="badge badge-warning">CSS</span>
+									</div>
+								</div>
+							</div>
+							<i class="fa fa-angle-down show-more" data-toggle="collapse" data-target="#project1"></i>
+						</li>
+						<!-- Boulder -->
+						<li class="list-group-item">
+							<i class="fa fa-heartbeat icon"></i>
+							<div class="content">
+								<div class="header" data-toggle="collapse" data-target="#project0">Boulder</div>
+								<div class="collapse more-details" id="project0">
+									<div class="details">
+										<div class="panel panel-default">
+											<div class="panel-body">
+												<i class="fa fa-star"></i> 3rd place at HackNC 2014<br />
+												<i class="fa fa-star"></i> Pebble Award - 1 of 2 Best Uses of the Pebble
+											</div>
+										</div>
+										<i>Boulder</i> is an application that allows users to train exercises using the <a href="https://www.pebble.com/" target="_blank">Pebble watch</a> and through a <b>machine learning</b> algorithm called a <a href="https://en.wikipedia.org/wiki/Support_vector_machine" target="_blank">support vector machine</a>, categorize the trained exercises or motions and recognize them when they are performed again by the user. Tied in with a <b>web interface</b>, <i>Boulder</i> allows users to not only keep track of their exercises, but also <i>interact with their friends</i>, <i>gain points</i> for getting more fit, and <i>level up</i>. <i>Boulder</i> <b>encourages healthy activities</b> and helps users <i>Get Boulder</i>.
+									</div>
+									<hr />
+									<div class="images">
+										<img class="small-height display" src="img/projects/boulder/boulder-main-page.png" alt="Boulder's social network" />
+									</div>
+									<hr />
+									<div class="links">
+										<a href="https://github.com/msilvprog7/Boulder-web" target="_blank"><i class="fa fa-github"></i> Website</a> 
+										<span class="badge badge-success">Python (Django)</span>
+										<a href="https://github.com/dferrer/Boulder" target="_blank"><i class="fa fa-github"></i> Pebble</a> 
+										<span class="badge badge-danger">JavaScript (Simply.js)</span>
+									</div>
+								</div>
+							</div>
+							<i class="fa fa-angle-down show-more" data-toggle="collapse" data-target="#project0"></i>
+						</li>
+					</ul>
+					<hr />
+					<h4>High School Internship</h4>
+					<ul class="list-group icon-list">
+						<!-- Jefferson Lab Internship -->
+						<li class="list-group-item">
+							<div class="icon">
+								<img src="img/work/jefferson-lab/icon.ico" />
+							</div>
+							<div class="content">
+								<div class="header" data-toggle="collapse" data-target="#workExperience0">Jefferson Lab (June - July 2011)</div>
+								<div class="collapse more-details" id="workExperience0">
+									<ul>
+										<li>Macros for Juliette Mammei's Moller Scattering project</li>
+									</ul>
+								</div>
+							</div>
+							<i class="fa fa-angle-down show-more" data-toggle="collapse" data-target="#workExperience0"></i>
+						</li>
+					</ul>
+				</div>
+			</div>
         </div>
 
 		<!-- JS Resources -->
-		<!--	JQuery v1.12.2 (hosted by Google) -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 		<!-- 	Bootstrap -->
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 		<!--	Local Javascript Resources -->
 		<script type="text/javascript">
 			$(document).ready(function () {

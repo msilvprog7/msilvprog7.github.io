@@ -15,10 +15,14 @@
 }
 
 /**
- * Modal size
+ * Row separation
  */
-@media screen and (min-width: 1216px) {
-	.modal-dialog {
-		width: 1216px;
-	}
+.row-separation {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 5px;
+}
+
+.modal-dialog {
+	max-width: 80%;
 }
