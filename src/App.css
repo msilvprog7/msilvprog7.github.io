@@ -1,0 +1,52 @@
+nav {
+  border-radius: 10px;
+  background: none !important;
+}
+
+.heading {
+  text-align: left;
+}
+
+h6.small {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+a.contact {
+  padding: 0px 10px;
+}
+
+svg.contact {
+  margin-top: 5px;
+}
+
+.profile {
+  text-align: center;
+}
+
+img.profile-image {
+  height: 125px;
+}
+
+.profile-name {
+  padding: 0px 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.profile-title {
+  padding: 0px 10px;
+  font-size: 12px;
+}
+
+.project {
+  margin-top: 10px;
+  margin-bottom: 90px;
+}
+
+.project-image {
+  display: block;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+}
