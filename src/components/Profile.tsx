@@ -6,6 +6,7 @@ interface ProfileProps {
   src: string;
   name: string;
   title: string;
+  company: string;
 }
 
 class Profile extends React.Component<ProfileProps> {
@@ -20,6 +21,7 @@ class Profile extends React.Component<ProfileProps> {
         />
         <div className="profile-name">{this.props.name}</div>
         <div className="profile-title">{this.props.title}</div>
+        <div className="profile-title">{this.props.company}</div>
       </Container>
     );
   }
