@@ -23,6 +23,7 @@ export default Object.assign(
         Capstone: prependPublicUrl(Directories.Projects, "capstone.png"),
         NDex: prependPublicUrl(Directories.Projects, "n-dex.png"),
         Tsp: prependPublicUrl(Directories.Projects, "tsp.jpg"),
+        Wedding: prependPublicUrl(Directories.Projects, "wedding.png"),
       },
     },
   }

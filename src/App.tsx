@@ -8,6 +8,7 @@ import {
   FaDownload,
   FaEnvelope,
   FaGithub,
+  FaGlobe,
   FaLinkedin,
   FaMapMarkerAlt,
   FaMobile,
@@ -21,7 +22,8 @@ import Project from "./components/Project";
 import "./App.css";
 
 const Name = "Michael Snider";
-const Title = "Software Engineer 2 • Microsoft";
+const Title = "Senior Software Engineer";
+const Company = "Microsoft";
 
 const App: React.FC = () => {
   return (
@@ -43,16 +45,20 @@ const App: React.FC = () => {
       <Container className="p-3">
         <Row>
           <Col md={3}>
-            <Profile src={Files.Images.Profile} name={Name} title={Title} />
+            <Profile
+              src={Files.Images.Profile}
+              name={Name}
+              title={Title}
+              company={Company}
+            />
           </Col>
           <Col md={5}>
             <Heading id="objective" heading="Objective">
               <Heading.Body>
-                Collaborate on innovative and reliable technical solutions with
-                5+ years of experience as a software engineer. I’m experienced
-                in microservice development, prototyping, site reliability, and
-                mentoring. I’m passionate about web development and customer
-                experience.
+                Collaborate on meaningful user experiences with 5+ years of
+                software engineering experience. I’m experienced in prototyping,
+                design, web services, and mentoring. I’m passionate about web
+                development and customer experience.
               </Heading.Body>
             </Heading>
           </Col>
@@ -62,8 +68,8 @@ const App: React.FC = () => {
                 <FaMapMarkerAlt className="contact" />
                 <Link
                   className="contact"
-                  href="https://goo.gl/maps/s5zpDrMVneYkC7wi6"
-                  text="Woodinville, WA"
+                  href="https://goo.gl/maps/LSCZ3ojficzeVdQE7"
+                  text="Bellevue, WA"
                 />
               </Row>
               <Row>
@@ -108,43 +114,45 @@ const App: React.FC = () => {
         <Row>
           <Col md={8}>
             <Heading id="experience" heading="Experience">
-              <Heading.Subtitle>Sep 2018 - Present</Heading.Subtitle>
-              <Heading.Title>{Title}</Heading.Title>
+              <Heading.Subtitle>Mar 2022 - Present</Heading.Subtitle>
+              <Heading.Title>
+                Senior Software Engineer • Microsoft
+              </Heading.Title>
               <Heading.Body>
-                Design, implement, and continue to onboard scenarios in ASP.NET
-                microservice for the storage, refinement, and notification of
-                users’ device locations for Teams, Family Safety, and Bing apps.
-                The service supports 500K users for 10M signals per day with 90p
-                latency under 2s.
+                Onboarding new scenarios to contribute device locations,
+                exploring routing experiences, and coaching colleagues to
+                support the team.
+              </Heading.Body>
+              <Heading.Subtitle>Sep 2018 - Feb 2022</Heading.Subtitle>
+              <Heading.Title>Software Engineer 2 • Microsoft</Heading.Title>
+              <Heading.Body>
+                Developed ASP.NET web service for device location notifications
+                for Teams, Family Safety, and Bing. 500K users, 10M signals per
+                day.
               </Heading.Body>
               <Heading.Body>
-                Received 2nd place in Maps and Geospatial science fair in 2019
-                One Week hackathon for the development of an NFC pet collar and
-                prototype Android app to reunite pets with their families.
+                2nd place, Maps and Geospatial science fair in 2019 One Week
+                hackathon, NFC pet collar and Android app to reunite pets with
+                their families.
               </Heading.Body>
               <Heading.Subtitle>Aug 2016 – Aug 2018</Heading.Subtitle>
               <Heading.Title>Software Engineer • Microsoft</Heading.Title>
               <Heading.Body>
-                Developed and integrated ASP.NET web service API for curating
-                collections of users’ favorite locations on Bing Maps, Windows
-                Maps, and Cortana.
+                Prototyped ASP.NET web service to infer users’ meeting locations
+                for calendar enrichment and travel notifications in Outlook.
               </Heading.Body>
               <Heading.Body>
-                Designed and prototyped ASP.NET web service infrastructure to
-                collect device locations and infer users’ meeting locations for
-                calendar enrichment and travel notifications in Outlook.
+                Developed ASP.NET web service API for curating collections of
+                users’ named locations on Bing Maps, Windows Maps, and Cortana.
               </Heading.Body>
               <Heading.Body>
-                Received 1st place in 2017 Cortana Skills hackathon for the
-                development of a Node.js Bot Framework skill to help family
-                members find the location of one another using speech or text
-                recognition with LUIS.AI.
+                1st place, 2017 Cortana Skills hackathon, Node.js, Bot with
+                LUIS.AI to find location of family members using speech or text.
               </Heading.Body>
               <Heading.Body>
-                Received 2nd place in Millennials category in 2017 One Week
-                hackathon for the development of a Node.js Bot Framework skill
-                to let music fans find concert tickets on SeatGeek using their
-                location and Spotify history.
+                2nd place, Millennials, 2017 One Week hackathon, Node.js, Bot to
+                find SeatGeek tickets ranked by location and Spotify music
+                history
               </Heading.Body>
             </Heading>
           </Col>
@@ -164,23 +172,22 @@ const App: React.FC = () => {
             <Heading id="skills" heading="Skills">
               <Heading.Title>Proficiencies</Heading.Title>
               <Heading.Body>
-                C# • ASP.NET • Azure (Fabric, Key-Vault, Bus, CosmosDB, Redis)
+                C# • ASP.NET • Azure Service Bus • CosmosDB • Redis • RESTful
+                APIs
                 <br />
                 Git • Code Review • Mentoring • Team Coordination • Agile
                 Planning
                 <br />
-                Design • Microservices • RESTful APIs
-                <br />
-                Site Reliability • Monitoring • Testing
+                Prototyping • Design • Microservices • Test-Driven Development
                 <br />
               </Heading.Body>
               <Heading.Title>Competencies</Heading.Title>
               <Heading.Body>
-                TypeScript • Node.js • React • Vue.js • HTML • CSS
+                React • TypeScript • JavaScript • Node.js • HTML • CSS
                 <br />
                 Java • Android • Google Web Toolkit
                 <br />
-                C++ • Python • Django
+                Python • Django
                 <br />
               </Heading.Body>
             </Heading>
@@ -191,6 +198,34 @@ const App: React.FC = () => {
       <Container className="p-3">
         <Heading id="projects" heading="Projects">
           <Row>
+            <Col md={4}>
+              <Project>
+                <Project.Title>Wedding Website</Project.Title>
+                <Project.Subtitle>
+                  React, <FaGithub />
+                  <Link
+                    href="https://github.com/msilvprog7/wedding"
+                    text="Github"
+                  />
+                  ,
+                  <FaGlobe />
+                  <Link
+                    href="https://bit.ly/emily-michael-2021"
+                    text="Website"
+                  />
+                </Project.Subtitle>
+                <Project.Body>
+                  My wife and my website for our wedding. I was interested in
+                  designing an image-centric, mobile-friendly website to invite
+                  our friends and family to our wedding while also providing
+                  easy-to-access links to places to visit in the area.
+                </Project.Body>
+                <Project.Image
+                  src={Files.Images.Projects.Wedding}
+                  alt="My wife and my wedding website"
+                />
+              </Project>
+            </Col>
             <Col md={4}>
               <Project>
                 <Project.Title>Planter</Project.Title>
@@ -218,6 +253,8 @@ const App: React.FC = () => {
                 </Project.Body>
               </Project>
             </Col>
+          </Row>
+          <Row>
             <Col md={4}>
               <Project>
                 <Project.Title>
@@ -238,8 +275,6 @@ const App: React.FC = () => {
                 />
               </Project>
             </Col>
-          </Row>
-          <Row>
             <Col md={4}>
               <Project>
                 <Project.Title>Undergraduate Thesis</Project.Title>
@@ -266,6 +301,8 @@ const App: React.FC = () => {
                 </Project.Body>
               </Project>
             </Col>
+          </Row>
+          <Row>
             <Col md={4}>
               <Project>
                 <Project.Title>JavaScript Game Engine</Project.Title>
@@ -282,8 +319,6 @@ const App: React.FC = () => {
                 </Project.Body>
               </Project>
             </Col>
-          </Row>
-          <Row>
             <Col md={4}>
               <Project>
                 <Project.Title>Tilda</Project.Title>
@@ -313,6 +348,8 @@ const App: React.FC = () => {
                 </Project.Body>
               </Project>
             </Col>
+          </Row>
+          <Row>
             <Col md={4}>
               <Project>
                 <Project.Title>Scavenger</Project.Title>
@@ -326,8 +363,6 @@ const App: React.FC = () => {
                 </Project.Body>
               </Project>
             </Col>
-          </Row>
-          <Row>
             <Col md={4}>
               <Project>
                 <Project.Title>Slingshot Sam</Project.Title>
@@ -360,6 +395,8 @@ const App: React.FC = () => {
                 </Project.Body>
               </Project>
             </Col>
+          </Row>
+          <Row>
             <Col md={4}>
               <Project>
                 <Project.Title>
@@ -384,8 +421,6 @@ const App: React.FC = () => {
                 />
               </Project>
             </Col>
-          </Row>
-          <Row>
             <Col md={4}>
               <Project>
                 <Project.Title>n-dex</Project.Title>
