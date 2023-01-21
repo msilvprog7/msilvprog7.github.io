@@ -29,15 +29,15 @@ const App: React.FC = () => {
   return (
     <Container className="p-3">
       <Navbar expand="lg">
-        <Navbar.Brand href="#objective">{Name}</Navbar.Brand>
+        <Navbar.Brand href="#about-me">{Name}</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
-            <Nav.Link href="#objective">Objective</Nav.Link>
+            <Nav.Link href="#about-me">About Me</Nav.Link>
             <Nav.Link href="#contact">Contact</Nav.Link>
-            <Nav.Link href="#experience">Experience</Nav.Link>
             <Nav.Link href="#education">Education</Nav.Link>
             <Nav.Link href="#skills">Skills</Nav.Link>
+            <Nav.Link href="#experience">Experience</Nav.Link>
             <Nav.Link href="#projects">Projects</Nav.Link>
           </Nav>
         </Navbar.Collapse>
@@ -53,12 +53,10 @@ const App: React.FC = () => {
             />
           </Col>
           <Col md={5}>
-            <Heading id="objective" heading="Objective">
+            <Heading id="about-me" heading="About Me">
               <Heading.Body>
-                Collaborate on meaningful user experiences with 5+ years of
-                software engineering experience. I’m experienced in prototyping,
-                design, web services, and mentoring. I’m passionate about web
-                development and customer experience.
+                Software engineer with 6+ years of experience developing web
+                services. Aspiring to create products users love.
               </Heading.Body>
             </Heading>
           </Col>
@@ -112,83 +110,65 @@ const App: React.FC = () => {
           </Col>
         </Row>
         <Row>
-          <Col md={8}>
-            <Heading id="experience" heading="Experience">
-              <Heading.Subtitle>Mar 2022 - Present</Heading.Subtitle>
-              <Heading.Title>
-                Senior Software Engineer • Microsoft
-              </Heading.Title>
-              <Heading.Body>
-                Onboarding new scenarios to contribute device locations,
-                exploring routing experiences, and coaching colleagues to
-                support the team.
-              </Heading.Body>
-              <Heading.Subtitle>Sep 2018 - Feb 2022</Heading.Subtitle>
-              <Heading.Title>Software Engineer 2 • Microsoft</Heading.Title>
-              <Heading.Body>
-                Developed ASP.NET web service for device location notifications
-                for Teams, Family Safety, and Bing. 500K users, 10M signals per
-                day.
-              </Heading.Body>
-              <Heading.Body>
-                2nd place, Maps and Geospatial science fair in 2019 One Week
-                hackathon, NFC pet collar and Android app to reunite pets with
-                their families.
-              </Heading.Body>
-              <Heading.Subtitle>Aug 2016 – Aug 2018</Heading.Subtitle>
-              <Heading.Title>Software Engineer • Microsoft</Heading.Title>
-              <Heading.Body>
-                Prototyped ASP.NET web service to infer users’ meeting locations
-                for calendar enrichment and travel notifications in Outlook.
-              </Heading.Body>
-              <Heading.Body>
-                Developed ASP.NET web service API for curating collections of
-                users’ named locations on Bing Maps, Windows Maps, and Cortana.
-              </Heading.Body>
-              <Heading.Body>
-                1st place, 2017 Cortana Skills hackathon, Node.js, Bot with
-                LUIS.AI to find location of family members using speech or text.
-              </Heading.Body>
-              <Heading.Body>
-                2nd place, Millennials, 2017 One Week hackathon, Node.js, Bot to
-                find SeatGeek tickets ranked by location and Spotify music
-                history
-              </Heading.Body>
-            </Heading>
-          </Col>
           <Col md={4}>
             <Heading id="education" heading="Education">
               <Heading.Subtitle>Aug 2012 - May 2016</Heading.Subtitle>
               <Heading.Title>
-                University of Virginia, Charlottesville, VA
+                B.S. Computer Science, University of Virginia
               </Heading.Title>
               <Heading.Body>
-                B.S. Computer Science • 3.941 GPA • Summa Cum Laude
-                <br />
-                Internships with Microsoft (2015) and Open Roads Consulting,
-                Inc. (2013 and 2014)
+                3.941 GPA; Capstone website for the Rivanna Trails Foundation;
+                Undergraduate Thesis on societal values in online privacy.
               </Heading.Body>
             </Heading>
             <Heading id="skills" heading="Skills">
-              <Heading.Title>Proficiencies</Heading.Title>
+              <Heading.Subtitle>Languages</Heading.Subtitle>
               <Heading.Body>
-                C# • ASP.NET • Azure Service Bus • CosmosDB • Redis • RESTful
-                APIs
-                <br />
-                Git • Code Review • Mentoring • Team Coordination • Agile
-                Planning
-                <br />
-                Prototyping • Design • Microservices • Test-Driven Development
-                <br />
+                C#, Java, Python, TypeScript, CSS, HTML
               </Heading.Body>
-              <Heading.Title>Competencies</Heading.Title>
+              <Heading.Subtitle>Frameworks</Heading.Subtitle>
+              <Heading.Body>ASP.NET, Node.js, React, Vue.js</Heading.Body>
+              <Heading.Subtitle>Software</Heading.Subtitle>
               <Heading.Body>
-                React • TypeScript • JavaScript • Node.js • HTML • CSS
-                <br />
-                Java • Android • Google Web Toolkit
-                <br />
-                Python • Django
-                <br />
+                Git, Azure, CI/CD, Figma, Photoshop, Premiere Pro
+              </Heading.Body>
+            </Heading>
+          </Col>
+          <Col md={8}>
+            <Heading id="experience" heading="Experience">
+              <Heading.Subtitle>Aug 2016 - Present</Heading.Subtitle>
+              <Heading.Title>
+                Senior Software Engineer • Microsoft
+              </Heading.Title>
+              <Heading.Body>
+                Directions (2022 – Present). Coordinated market flighting of OSM
+                data for route quality. Mentored development of website to debug
+                routes. Delivered commute ETA lookup service for Windows.
+              </Heading.Body>
+              <Heading.Body>
+                Beacon (2016 – 2021). Designed and developed device location
+                notification service for Teams, Family Safety, and Bing. Built
+                website to debug location upload and inferences. Experimented on
+                detecting meeting locations to provide time to leave in Outlook.
+              </Heading.Body>
+              <Heading.Body>
+                Hackathon achievements. Bring my pet home collar (2019 One Week,
+                2 nd place in Maps and Geospatial), Find my family (2017 Cortana
+                Skills, 1 st place), and Music ticket bot (2017 One Week, 2nd
+                place Millennials).
+              </Heading.Body>
+              <Heading.Subtitle>2013 - 2015</Heading.Subtitle>
+              <Heading.Title>
+                Software Engineer Intern • Microsoft, Open Roads
+              </Heading.Title>
+              <Heading.Body>
+                Microsoft (2015). Location history for Microsoft privacy. Speed
+                test search result for Bing.
+              </Heading.Body>
+              <Heading.Body>
+                Open Roads Consulting (2013, 2014). Event planning, travel time,
+                and localization for the traffic management system. Website for
+                quality assurance.
               </Heading.Body>
             </Heading>
           </Col>
