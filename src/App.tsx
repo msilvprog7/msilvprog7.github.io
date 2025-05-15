@@ -55,8 +55,13 @@ const App: React.FC = () => {
           <Col md={5}>
             <Heading id="about-me" heading="About Me">
               <Heading.Body>
-                Software engineer with 6+ years of experience developing web
-                services. Aspiring to create products users love.
+                <b>Software engineer</b> with <b>8+ years</b> of experience
+                developing <b>full-stack</b> web services, apis, and websites
+                for digital
+                <b>maps and navigation</b> to help people explore the world.
+                Coding is my craft and I plan to create more products users
+                love. I’m passionate about learning new skills, being
+                productive, and mentoring with care.
               </Heading.Body>
             </Heading>
           </Col>
@@ -66,8 +71,8 @@ const App: React.FC = () => {
                 <FaMapMarkerAlt className="contact" />
                 <Link
                   className="contact"
-                  href="https://goo.gl/maps/LSCZ3ojficzeVdQE7"
-                  text="Bellevue, WA"
+                  href="https://maps.app.goo.gl/2xFepBQbzcfdQJrx5"
+                  text="Woodinville, WA"
                 />
               </Row>
               <Row>
@@ -110,30 +115,6 @@ const App: React.FC = () => {
           </Col>
         </Row>
         <Row>
-          <Col md={4}>
-            <Heading id="education" heading="Education">
-              <Heading.Subtitle>Aug 2012 - May 2016</Heading.Subtitle>
-              <Heading.Title>
-                B.S. Computer Science, University of Virginia
-              </Heading.Title>
-              <Heading.Body>
-                3.941 GPA; Capstone website for the Rivanna Trails Foundation;
-                Undergraduate Thesis on societal values in online privacy.
-              </Heading.Body>
-            </Heading>
-            <Heading id="skills" heading="Skills">
-              <Heading.Subtitle>Languages</Heading.Subtitle>
-              <Heading.Body>
-                C#, Java, Python, TypeScript, CSS, HTML
-              </Heading.Body>
-              <Heading.Subtitle>Frameworks</Heading.Subtitle>
-              <Heading.Body>ASP.NET, Node.js, React, Vue.js</Heading.Body>
-              <Heading.Subtitle>Software</Heading.Subtitle>
-              <Heading.Body>
-                Git, Azure, CI/CD, Figma, Photoshop, Premiere Pro
-              </Heading.Body>
-            </Heading>
-          </Col>
           <Col md={8}>
             <Heading id="experience" heading="Experience">
               <Heading.Subtitle>Aug 2016 - Present</Heading.Subtitle>
@@ -141,9 +122,12 @@ const App: React.FC = () => {
                 Senior Software Engineer • Microsoft
               </Heading.Title>
               <Heading.Body>
-                Directions (2022 – Present). Coordinated market flighting of OSM
-                data for route quality. Mentored development of website to debug
-                routes. Delivered commute ETA lookup service for Windows.
+                Directions (2022 – Present). <b>Route enrichments</b> for maps,
+                bing, and copilot working across multiple stacks.{" "}
+                <b>Modernization</b> of bing route apis with .NET Core on Linux
+                and gRPC for azure route apis. Polyline smoothness. 1% drop in
+                bad requests. <b>Delayed segments</b> for mobile. Route debugger
+                website. Commute ETA lookup on windows.
               </Heading.Body>
               <Heading.Body>
                 Beacon (2016 – 2021). Designed and developed device location
@@ -152,25 +136,52 @@ const App: React.FC = () => {
                 detecting meeting locations to provide time to leave in Outlook.
               </Heading.Body>
               <Heading.Body>
-                Hackathon achievements. Bring my pet home collar (2019 One Week,
-                2 nd place in Maps and Geospatial), Find my family (2017 Cortana
-                Skills, 1 st place), and Music ticket bot (2017 One Week, 2nd
-                place Millennials).
+                Hackathon achievements. <b>Bring my pet home collar</b> (2019
+                One Week, 2 nd place in Maps and Geospatial), Find my family
+                (2017 Cortana Skills, 1 st place), and Music ticket bot (2017
+                One Week, 2nd place Millennials).
               </Heading.Body>
-              <Heading.Subtitle>2013 - 2015</Heading.Subtitle>
+              <Heading.Subtitle>2013 - 2015 (3 summers)</Heading.Subtitle>
               <Heading.Title>
                 Software Engineer Intern • Microsoft, Open Roads
               </Heading.Title>
               <Heading.Body>
-                Microsoft (2015). Location history for Microsoft privacy. Speed
-                test search result for Bing.
+                Microsoft (2015). <b>Location history</b> for Microsoft privacy
+                dashboard. <b>Speed test</b> search result for Bing (hackathon).
               </Heading.Body>
               <Heading.Body>
                 Open Roads Consulting (2013, 2014). Event planning, travel time,
-                and localization for the traffic management system. Website for
-                quality assurance.
+                and localization for the <b>traffic management system</b>.
+                Website for quality assurance.
               </Heading.Body>
             </Heading>
+            <Col md={4}>
+              <Heading id="education" heading="Education">
+                <Heading.Subtitle>Aug 2012 - May 2016</Heading.Subtitle>
+                <Heading.Title>
+                  B.S. Computer Science, University of Virginia
+                </Heading.Title>
+                <Heading.Body>
+                  3.941 GPA; Capstone map website for the Rivanna Trails
+                  Foundation; Undergraduate Thesis on societal values in online
+                  privacy.
+                </Heading.Body>
+              </Heading>
+              <Heading id="skills" heading="Skills">
+                <Heading.Subtitle>Languages</Heading.Subtitle>
+                <Heading.Body>
+                  C#, TypeScript, Python, Java, CSS, HTML
+                </Heading.Body>
+                <Heading.Subtitle>Frameworks</Heading.Subtitle>
+                <Heading.Body>
+                  ASP.NET Core, gRPC, Node.js, React, Vue.js
+                </Heading.Body>
+                <Heading.Subtitle>Software</Heading.Subtitle>
+                <Heading.Body>
+                  Git, VS Code, Azure, CI/CD, K8s, Copilot, Figma
+                </Heading.Body>
+              </Heading>
+            </Col>
           </Col>
         </Row>
       </Container>
