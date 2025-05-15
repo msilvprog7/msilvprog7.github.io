@@ -117,7 +117,9 @@ const App: React.FC = () => {
         <Row>
           <Col md={8}>
             <Heading id="experience" heading="Experience">
-              <Heading.Subtitle>Aug 2016 - Present</Heading.Subtitle>
+              <Heading.Subtitle>
+                Aug 2016 - Present (8 years, 9 months)
+              </Heading.Subtitle>
               <Heading.Title>
                 Senior Software Engineer • Microsoft
               </Heading.Title>
@@ -155,33 +157,33 @@ const App: React.FC = () => {
                 Website for quality assurance.
               </Heading.Body>
             </Heading>
-            <Col md={4}>
-              <Heading id="education" heading="Education">
-                <Heading.Subtitle>Aug 2012 - May 2016</Heading.Subtitle>
-                <Heading.Title>
-                  B.S. Computer Science, University of Virginia
-                </Heading.Title>
-                <Heading.Body>
-                  3.941 GPA; Capstone map website for the Rivanna Trails
-                  Foundation; Undergraduate Thesis on societal values in online
-                  privacy.
-                </Heading.Body>
-              </Heading>
-              <Heading id="skills" heading="Skills">
-                <Heading.Subtitle>Languages</Heading.Subtitle>
-                <Heading.Body>
-                  C#, TypeScript, Python, Java, CSS, HTML
-                </Heading.Body>
-                <Heading.Subtitle>Frameworks</Heading.Subtitle>
-                <Heading.Body>
-                  ASP.NET Core, gRPC, Node.js, React, Vue.js
-                </Heading.Body>
-                <Heading.Subtitle>Software</Heading.Subtitle>
-                <Heading.Body>
-                  Git, VS Code, Azure, CI/CD, K8s, Copilot, Figma
-                </Heading.Body>
-              </Heading>
-            </Col>
+          </Col>
+          <Col md={4}>
+            <Heading id="education" heading="Education">
+              <Heading.Subtitle>Aug 2012 - May 2016</Heading.Subtitle>
+              <Heading.Title>
+                B.S. Computer Science, University of Virginia
+              </Heading.Title>
+              <Heading.Body>
+                3.941 GPA; Capstone map website for the Rivanna Trails
+                Foundation; Undergraduate Thesis on societal values in online
+                privacy.
+              </Heading.Body>
+            </Heading>
+            <Heading id="skills" heading="Skills">
+              <Heading.Subtitle>Languages</Heading.Subtitle>
+              <Heading.Body>
+                C#, TypeScript, Python, Java, CSS, HTML
+              </Heading.Body>
+              <Heading.Subtitle>Frameworks</Heading.Subtitle>
+              <Heading.Body>
+                ASP.NET Core, gRPC, Node.js, React, Vue.js
+              </Heading.Body>
+              <Heading.Subtitle>Software</Heading.Subtitle>
+              <Heading.Body>
+                Git, VS Code, Azure, CI/CD, K8s, Copilot, Figma
+              </Heading.Body>
+            </Heading>
           </Col>
         </Row>
       </Container>
