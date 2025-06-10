@@ -55,13 +55,13 @@ const App: React.FC = () => {
           <Col md={5}>
             <Heading id="about-me" heading="About Me">
               <Heading.Body>
-                <b>Software engineer</b> with <b>8+ years</b> of experience
-                developing <b>full-stack</b> web services, apis, and websites
-                for digital
-                <b>maps and navigation</b> to help people explore the world.
-                Coding is my craft and I plan to create more products users
-                love. I’m passionate about learning new skills, being
-                productive, and mentoring with care.
+                Software engineer with 8+ years of experience designing and
+                developing full-stack web services, APIs, and user-centric
+                websites focused on digital maps and navigation. Recognized for
+                crafting high-quality code, delivering products that enhance
+                user experiences, and mentoring team members with a thoughtful,
+                collaborative approach. Passionate about continuous learning,
+                innovation, and building solutions to assist people.
               </Heading.Body>
             </Heading>
           </Col>
@@ -115,73 +115,145 @@ const App: React.FC = () => {
           </Col>
         </Row>
         <Row>
-          <Col md={8}>
+          <Col md={7}>
             <Heading id="experience" heading="Experience">
-              <Heading.Subtitle>
-                Aug 2016 - Present (8 years, 9 months)
-              </Heading.Subtitle>
               <Heading.Title>
-                Senior Software Engineer • Microsoft
+                <b>Microsoft</b>
               </Heading.Title>
+              <Heading.Subtitle>Aug 2016 - Present</Heading.Subtitle>
               <Heading.Body>
-                Directions (2022 – Present). <b>Route enrichments</b> for maps,
-                bing, and copilot working across multiple stacks.{" "}
-                <b>Modernization</b> of bing route apis with .NET Core on Linux
-                and gRPC for azure route apis. Polyline smoothness. 1% drop in
-                bad requests. <b>Delayed segments</b> for mobile. Route debugger
-                website. Commute ETA lookup on windows.
+                <b>
+                  Senior Software Engineer | Directions, March 2022 - Present
+                </b>
+                <br />
+                Designed, developed, and led projects for the route services,
+                APIs, and experiences for Bing Maps, Bing Search, Windows,
+                Copilot, and B2B customers
+                <ul>
+                  <li>
+                    Provided product recommendations with cutting-edge demos for
+                    Route Enrichments including weather and grounding metadata
+                  </li>
+                  <li>
+                    Directed the migration and re-architecture of API business
+                    logic and tests to .NET Core on Linux and gRPC for Azure to
+                    secure the stack while improving code re-use, debuggability,
+                    and performance
+                  </li>
+                  <li>
+                    Delivered improvements to customer experience across the
+                    stack with features like smooth, encoded polylines, and a
+                    67% reduction in customer bad requests
+                  </li>
+                  <li>
+                    Shipped new features and tools like delayed segments,
+                    commute ETA, and route debugger website
+                  </li>
+                </ul>
               </Heading.Body>
               <Heading.Body>
-                Beacon (2016 – 2021). Designed and developed device location
-                notification service for Teams, Family Safety, and Bing. Built
-                website to debug location upload and inferences. Experimented on
-                detecting meeting locations to provide time to leave in Outlook.
+                <b>Software Engineer II | Beacon, August 2016 - March 2022</b>
+                <br />
+                Designed and developed device location service and home/work
+                APIs for Bing Maps, Bing app, Outlook, Teams, and Family Safety
+                app
+                <ul>
+                  <li>
+                    Executed the data migration and re-architecture of Home/Work
+                    APIs when data store was deprecated
+                  </li>
+                  <li>
+                    Implemented and tested near real-time geofence inference for
+                    Family Safety app notifications
+                  </li>
+                  <li>
+                    Prototyped forward-thinking meeting location inference and
+                    batch inference support
+                  </li>
+                  <li>
+                    Supported team by creating location inference viewer website
+                    to experiment with signal upload
+                  </li>
+                  <li>
+                    Developed innovative hackathon projects to solve real-world
+                    problems with existing technologies and frameworks: Bring my
+                    pet home collar (2nd place Maps + Geospatial, 2019), Find my
+                    family (1st place Cortana Skills, 2017), Music ticket bot
+                    (2nd place Millennials, 2017)
+                  </li>
+                </ul>
               </Heading.Body>
-              <Heading.Body>
-                Hackathon achievements. <b>Bring my pet home collar</b> (2019
-                One Week, 2 nd place in Maps and Geospatial), Find my family
-                (2017 Cortana Skills, 1 st place), and Music ticket bot (2017
-                One Week, 2nd place Millennials).
-              </Heading.Body>
-              <Heading.Subtitle>2013 - 2015 (3 summers)</Heading.Subtitle>
+              <br />
               <Heading.Title>
-                Software Engineer Intern • Microsoft, Open Roads
+                <b>Microsoft</b>
               </Heading.Title>
+              <Heading.Subtitle>2015</Heading.Subtitle>
               <Heading.Body>
-                Microsoft (2015). <b>Location history</b> for Microsoft privacy
-                dashboard. <b>Speed test</b> search result for Bing (hackathon).
+                <b>Software Engineer Intern | User Location</b>
+                <br />
+                <ul>
+                  <li>Location history for Privacy and Speed Test for Bing</li>
+                </ul>
               </Heading.Body>
+              <br />
+              <Heading.Title>
+                <b>Open Roads Consulting</b>
+              </Heading.Title>
+              <Heading.Subtitle>2013, 2014</Heading.Subtitle>
               <Heading.Body>
-                Open Roads Consulting (2013, 2014). Event planning, travel time,
-                and localization for the <b>traffic management system</b>.
-                Website for quality assurance.
+                <b>Software Developer Intern | Traffic Management System</b>
+                <br />
+                <ul>
+                  <li>
+                    Planned events feature, travel time reporting, localization
+                    support, and QA website
+                  </li>
+                </ul>
               </Heading.Body>
             </Heading>
           </Col>
-          <Col md={4}>
-            <Heading id="education" heading="Education">
-              <Heading.Subtitle>Aug 2012 - May 2016</Heading.Subtitle>
-              <Heading.Title>
-                B.S. Computer Science, University of Virginia
-              </Heading.Title>
-              <Heading.Body>
-                3.941 GPA; Capstone map website for the Rivanna Trails
-                Foundation; Undergraduate Thesis on societal values in online
-                privacy.
-              </Heading.Body>
-            </Heading>
+          <Col md={5}>
             <Heading id="skills" heading="Skills">
               <Heading.Subtitle>Languages</Heading.Subtitle>
               <Heading.Body>
                 C#, TypeScript, Python, Java, CSS, HTML
               </Heading.Body>
+              <Heading.Subtitle>Software</Heading.Subtitle>
+              <Heading.Body>
+                Git, VS Code, Azure, CI/CD, K8s, Copilot, Figma
+              </Heading.Body>
               <Heading.Subtitle>Frameworks</Heading.Subtitle>
               <Heading.Body>
                 ASP.NET Core, gRPC, Node.js, React, Vue.js
               </Heading.Body>
-              <Heading.Subtitle>Software</Heading.Subtitle>
+            </Heading>
+            <Heading id="education" heading="Education">
+              <Heading.Title>
+                <b>
+                  Bachelor of Science (B.S.), Computer Science | University of
+                  Virginia | 3.941 GPA
+                </b>
+              </Heading.Title>
+              <Heading.Subtitle>2012 - 2016</Heading.Subtitle>
               <Heading.Body>
-                Git, VS Code, Azure, CI/CD, K8s, Copilot, Figma
+                <ul>
+                  <li>Capstone map website for Rivanna Trails Foundation</li>
+                  <li>
+                    Undergraduate thesis on societal values in online privacy
+                  </li>
+                </ul>
+              </Heading.Body>
+              <Heading.Title>
+                <b>Google UX Design Certificate | Coursera</b>
+              </Heading.Title>
+              <Heading.Subtitle>2023</Heading.Subtitle>
+              <Heading.Body>
+                <ul>
+                  <li>
+                    7 sections, 3 projects with research, wireframes, mockups,
+                    prototypes, and usability testing
+                  </li>
+                </ul>
               </Heading.Body>
             </Heading>
           </Col>
