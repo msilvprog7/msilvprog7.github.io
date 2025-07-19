@@ -23,7 +23,7 @@ import "./App.css";
 
 const Name = "Michael Snider";
 const Title = "Senior Software Engineer";
-const Company = "Microsoft";
+const Company = "";
 
 const App: React.FC = () => {
   return (
