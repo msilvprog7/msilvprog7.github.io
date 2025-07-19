@@ -120,10 +120,11 @@ const App: React.FC = () => {
               <Heading.Title>
                 <b>Microsoft</b>
               </Heading.Title>
-              <Heading.Subtitle>Aug 2016 - Present</Heading.Subtitle>
+              <Heading.Subtitle>Aug 2016 - May 2025</Heading.Subtitle>
               <Heading.Body>
                 <b>
-                  Senior Software Engineer | Directions, March 2022 - Present
+                  Senior Software Engineer | Directions team, March 2022 - May
+                  2025
                 </b>
                 <br />
                 Designed, developed, and led projects for the route services,
@@ -152,7 +153,10 @@ const App: React.FC = () => {
                 </ul>
               </Heading.Body>
               <Heading.Body>
-                <b>Software Engineer II | Beacon, August 2016 - March 2022</b>
+                <b>
+                  Software Engineer / Software Engineer II | Beacon team, August
+                  2016 - March 2022
+                </b>
                 <br />
                 Designed and developed device location service and home/work
                 APIs for Bing Maps, Bing app, Outlook, Teams, and Family Safety
@@ -189,7 +193,7 @@ const App: React.FC = () => {
               </Heading.Title>
               <Heading.Subtitle>2015</Heading.Subtitle>
               <Heading.Body>
-                <b>Software Engineer Intern | User Location</b>
+                <b>Software Engineer Intern | User Location team</b>
                 <br />
                 <ul>
                   <li>Location history for Privacy and Speed Test for Bing</li>
@@ -201,7 +205,9 @@ const App: React.FC = () => {
               </Heading.Title>
               <Heading.Subtitle>2013, 2014</Heading.Subtitle>
               <Heading.Body>
-                <b>Software Developer Intern | Traffic Management System</b>
+                <b>
+                  Software Developer Intern | Traffic Management System team
+                </b>
                 <br />
                 <ul>
                   <li>
@@ -240,18 +246,6 @@ const App: React.FC = () => {
                   <li>Capstone map website for Rivanna Trails Foundation</li>
                   <li>
                     Undergraduate thesis on societal values in online privacy
-                  </li>
-                </ul>
-              </Heading.Body>
-              <Heading.Title>
-                <b>Google UX Design Certificate | Coursera</b>
-              </Heading.Title>
-              <Heading.Subtitle>2023</Heading.Subtitle>
-              <Heading.Body>
-                <ul>
-                  <li>
-                    7 sections, 3 projects with research, wireframes, mockups,
-                    prototypes, and usability testing
                   </li>
                 </ul>
               </Heading.Body>
