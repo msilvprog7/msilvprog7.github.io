@@ -154,8 +154,12 @@ const App: React.FC = () => {
               </Heading.Body>
               <Heading.Body>
                 <b>
-                  Software Engineer / Software Engineer II | Beacon team, August
-                  2016 - March 2022
+                  Software Engineer II | Beacon team, September 2018 - March
+                  2022
+                </b>
+                <br />
+                <b>
+                  Software Engineer | Beacon team, August 2016 - September 2018
                 </b>
                 <br />
                 Designed and developed device location service and home/work
